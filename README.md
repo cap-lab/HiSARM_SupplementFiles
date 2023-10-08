@@ -33,7 +33,7 @@ _throw\_statement_ actually triggers an event which affects to the transition of
 | _if\_statement_, _else\_statement_ | if/else conditional statement | <pre>if(cmd == "RC") {<br>    throw RC<br>else if (cmd == "START") {<br>    throw START<br>} else {<br>    throw FINISH<br>}</pre> |
 | _loop\_statement_ | Execute the compounded statements until a specified condition is reached | <pre>loop (2 SEC, color != "YELLOW") {<br>    report()<br>}</pre> |
 | _send\_statement_ | Send a message to other team or group leaders | <code>send(Team2, searchResult)</code> |
-| _publish\_statement_ | Publish a message to robots of a target team or group | publish(Team2 , found) |
+| _publish\_statement_ | Publish a message to robots of a target team or group | <code>publish(Team2 , found)</code> |
 | _receive\_statement_ | Receive a message from robots from other team or group leaders | <code>rc\_cmd = receive(Team1, cmd)</code> |
 | _subscribe\_statement_ | Subscribe a message from robots of a target team or group | <code>result = subscribe(Team1, found)</code> |
 | _action\_statement_ | The function-style basic robot behavior which are already registered in the managed database of the framework | <code>isFound = searchObject(area, target)</code> |
