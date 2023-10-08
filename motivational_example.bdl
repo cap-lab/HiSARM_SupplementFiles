@@ -1,0 +1,124 @@
+# Team Formation
+{
+    OnSiteResponse: ePuck searcher[7]
+    EvacuationSupport: p3dx supporter[3]
+}
+# Transition Definition
+Main.OnSiteResponse {
+    case(Wait):
+        catch(FIRE): mode = Divide
+    case(Divide):
+        catch(AISLE_ARRIVED): mode = Guide
+    default: mode = Wait
+}
+
+ModeTransition.Distribute(TARGET) {
+    case(Move):
+        catch(ROOM_ARRIVED): mode = RoomCheck
+    case(RoomCheck):
+        catch(SEARCHED): mode = MoveToAisle
+    default: mode = Move(TARGET)
+}
+
+ModeTransition.Search {
+    default: mode = Search
+}
+
+ModeTransition.Extinguish {
+    default: mode = Extinguish
+}
+
+Main.EvacuationSupport {
+    default: mode = SetupEvaucationPath
+}
+
+# Mode Definition
+Mode.Divide {
+    group(Room1, min=2): ModeTransition.Distribute("ROOM1")
+    group(Room2, min=3): ModeTransition.Distribute("ROOM2")
+    group(Room3, min=2): ModeTransition.Distribute("ROOM3")
+    services:
+        MonitorEnvironment
+}
+
+Mode.RoomCheck {
+    group(Search, min=1): ModeTransition.Search
+    group(Extinguish, min=1): ModeTransition.Extinguish
+    services:
+        MonitorEnvironment
+}
+
+Mode.Search { 
+    services:
+        SearchPeople
+}
+
+Mode.Move(TARGET) {
+    services:
+        MoveToTarget(TARGET)
+}
+
+Mode.Wait {
+    services:
+        DetectFire
+}
+
+Mode.Extinguish {
+    services:
+        ExtinguishFire
+}
+
+Mode.Guide {
+    services:
+        GuidePeople
+}
+
+Mode.SetupEvaucationPath {
+    services:
+        MakeEvacuationRoute
+}
+
+Mode.MoveToAisle { 
+    services:
+        MoveAisle
+}
+
+# Service Definition
+MoveToTarget(TARGET_POSITION) {
+    move(TARGET_POSITION)
+    throw ROOM_ARRIVED
+}
+
+SearchPeople {
+    result = search()
+    if (result == SUCCESS)
+        throw SEARCHED broadcast
+} repeat(5 SEC)
+
+MakeEvacuationRoute() {
+    makeEvacuationPath()
+}
+
+MonitorEnvironment {
+    report()
+} repeat(1 SEC)
+
+DetectFire {
+    detected = detectFire()
+    if(detected == "TRUE") {
+        throw FIRE broadcast
+    }
+}
+
+ExtinguishFire {
+    extinguish()
+}
+
+GuidePeople {
+    guide()
+}
+
+MoveAisle() {
+    move("AISLE")
+    throw AISLE_ARRIVED
+}
