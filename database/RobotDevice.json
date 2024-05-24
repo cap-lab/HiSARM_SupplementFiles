@@ -1,0 +1,156 @@
+[{
+  "RobotId": "desktop_ws",
+  "RobotClass": "desktop",
+  "CommunicationInfo": [
+    {
+      "type": "ETHERNET_WIFI",
+      "address": {
+        "ip": "127.0.0.1",
+        "port": "8080"
+      }
+    }
+  ],
+  "UploadInfo": {
+    "type": "ssh",
+    "address": {
+      "ip": "127.0.0.1",
+      "port": "22",
+      "username": "xxxxxx"
+    }
+  }
+},
+{
+  "RobotId": "Burger_1",
+  "RobotClass": "Turtlebot3_burger",
+  "CommunicationInfo": [
+    {
+      "type": "ETHERNET_WIFI",
+      "address": {
+        "ip": "127.0.0.1",
+        "port": 8080
+      }
+    },
+    {
+      "type": "USB",
+      "address": {
+        "port": "/dev/ttyACM0"
+      }
+    }
+  ],
+  "UploadInfo": {
+    "type": "ssh",
+    "address": {
+      "ip": "127.0.0.1",
+      "port": "22",
+      "username": "xxxxxx"
+    }
+  }
+},
+{
+  "RobotId": "Burger_2",
+  "RobotClass": "Turtlebot3_burger",
+  "CommunicationInfo": [
+    {
+      "type": "ETHERNET_WIFI",
+      "address": {
+        "ip": "127.0.0.1",
+        "port": 8080
+      }
+    },
+    {
+      "type": "USB",
+      "address": {
+        "port": "/dev/ttyACM0"
+      }
+    }
+  ],
+  "UploadInfo": {
+    "type": "ssh",
+    "address": {
+      "ip": "127.0.0.1",
+      "port": "22",
+      "username": "xxxxxx"
+    }
+  }
+},
+{
+  "RobotId": "Burger_6",
+  "RobotClass": "Turtlebot3_burger",
+  "CommunicationInfo": [
+    {
+      "type": "ETHERNET_WIFI",
+      "address": {
+        "ip": "127.0.0.1",
+        "port": 8080
+      }
+    },
+    {
+      "type": "USB",
+      "address": {
+        "port": "/dev/ttyACM0"
+      }
+    }
+  ],
+  "UploadInfo": {
+    "type": "ssh",
+    "address": {
+      "ip": "127.0.0.1",
+      "port": "22",
+      "username": "xxxxxx"
+    }
+  }
+},
+{
+  "RobotId": "Burger_3",
+  "RobotClass": "Turtlebot3_burger",
+  "CommunicationInfo": [
+    {
+      "type": "ETHERNET_WIFI",
+      "address": {
+        "ip": "127.0.0.1",
+        "port": 8080
+      }
+    },
+    {
+      "type": "USB",
+      "address": {
+        "port": "/dev/ttyACM0"
+      }
+    }
+  ],
+  "UploadInfo": {
+    "type": "ssh",
+    "address": {
+      "ip": "127.0.0.1",
+      "port": "22",
+      "username": "xxxxxx"
+    }
+  }
+},
+{
+  "RobotId": "Burger_5",
+  "RobotClass": "Turtlebot3_burger",
+  "CommunicationInfo": [
+    {
+      "type": "ETHERNET_WIFI",
+      "address": {
+        "ip": "127.0.0.1",
+        "port": 8080
+      }
+    },
+    {
+      "type": "USB",
+      "address": {
+        "port": "/dev/ttyACM0"
+      }
+    }
+  ],
+  "UploadInfo": {
+    "type": "ssh",
+    "address": {
+      "ip": "127.0.0.1",
+      "port": "22",
+      "username": "xxxxxx"
+    }
+  }
+}]

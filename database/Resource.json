@@ -1,0 +1,302 @@
+[{
+  "ResourceId": "lds",
+  "RobotClass": "Turtlebot3_burger",
+  "TaskId": "Turtlebot3_lds",
+  "DataSize": 1392,
+  "Conflict": false,
+  "Type": "sensor"
+},
+{
+  "ResourceId": "sensor",
+  "RobotClass": "FakeBot",
+  "TaskId": "FakeBot_sensor",
+  "DataSize": 4,
+  "Conflict": false,
+  "Type": "sensor"
+},
+{
+  "ResourceId": "actuator",
+  "RobotClass": "FakeBot",
+  "TaskId": "FakeBot_actuator",
+  "DataSize": 4,
+  "Conflict": false,
+  "Type": "actuator"
+},
+{
+  "ResourceId": "alarmFire",
+  "RobotClass": "EPuckSim",
+  "TaskId": "EPuckSim_alarmFire",
+  "DataSize": 4,
+  "Conflict": false,
+  "Type": "sensor"
+},
+{
+  "ResourceId": "detectFire",
+  "RobotClass": "EPuckSim",
+  "TaskId": "EPuckSim_detectFire",
+  "DataSize": 32,
+  "Conflict": false,
+  "Type": "sensor"
+},
+{
+  "ResourceId": "detectItem",
+  "RobotClass": "EPuckSim",
+  "TaskId": "EPuckSim_detectItem",
+  "DataSize": 4,
+  "Conflict": false,
+  "Type": "sensor"
+},
+{
+  "ResourceId": "extinguish",
+  "RobotClass": "EPuckSim",
+  "TaskId": "EPuckSim_extinguish",
+  "DataSize": 4,
+  "Conflict": true,
+  "Type": "actuator"
+},
+{
+  "ResourceId": "led",
+  "RobotClass": "EPuckSim",
+  "TaskId": "EPuckSim_led",
+  "DataSize": 32,
+  "Conflict": false,
+  "Type": "actuator"
+},
+{
+  "ResourceId": "orientation",
+  "RobotClass": "EPuckSim",
+  "TaskId": "EPuckSim_orientation",
+  "DataSize": 24,
+  "Conflict": false,
+  "Type": "sensor"
+},
+{
+  "ResourceId": "position",
+  "RobotClass": "EPuckSim",
+  "TaskId": "EPuckSim_position",
+  "DataSize": 24,
+  "Conflict": false,
+  "Type": "sensor"
+},
+{
+  "ResourceId": "proximity",
+  "RobotClass": "EPuckSim",
+  "TaskId": "EPuckSim_proximity",
+  "DataSize": 64,
+  "Conflict": false,
+  "Type": "sensor"
+},
+{
+  "ResourceId": "sendSignal",
+  "RobotClass": "EPuckSim",
+  "TaskId": "EPuckSim_sendSignal",
+  "DataSize": 4,
+  "Conflict": true,
+  "Type": "actuator"
+},
+{
+  "ResourceId": "wheel",
+  "RobotClass": "EPuckSim",
+  "TaskId": "EPuckSim_wheel",
+  "DataSize": 16,
+  "Conflict": true,
+  "Type": "actuator"
+},
+{
+  "ResourceId": "alarmFire",
+  "RobotClass": "P3DXSim",
+  "TaskId": "P3DXSim_alarmFire",
+  "DataSize": 4,
+  "Conflict": false,
+  "Type": "sensor"
+},
+{
+  "ResourceId": "orientation",
+  "RobotClass": "P3DXSim",
+  "TaskId": "P3DXSim_orientation",
+  "DataSize": 24,
+  "Conflict": false,
+  "Type": "sensor"
+},
+{
+  "ResourceId": "position",
+  "RobotClass": "P3DXSim",
+  "TaskId": "P3DXSim_position",
+  "DataSize": 24,
+  "Conflict": false,
+  "Type": "sensor"
+},
+{
+  "ResourceId": "ultrasonic",
+  "RobotClass": "P3DXSim",
+  "TaskId": "P3DXSim_ultrasonic",
+  "DataSize": 128,
+  "Conflict": false,
+  "Type": "sensor"
+},
+{
+  "ResourceId": "wheel",
+  "RobotClass": "P3DXSim",
+  "TaskId": "P3DXSim_wheel",
+  "DataSize": 16,
+  "Conflict": true,
+  "Type": "actuator"
+},
+{
+  "ResourceId": "lds",
+  "RobotClass": "Turtlebot3_waffle",
+  "TaskId": "Turtlebot3_lds",
+  "DataSize": 1392,
+  "Conflict": false,
+  "Type": "sensor"
+},
+{
+  "ResourceId": "lds",
+  "RobotClass": "Turtlebot3_tank",
+  "TaskId": "Turtlebot3_lds",
+  "DataSize": 1392,
+  "Conflict": false,
+  "Type": "sensor"
+},
+{
+  "ResourceId": "color",
+  "RobotClass": "Turtlebot3_burger",
+  "TaskId": "Turtlebot3_color",
+  "DataSize": 4,
+  "Conflict": false,
+  "Type": "sensor"
+},
+{
+  "ResourceId": "led",
+  "RobotClass": "Turtlebot3_burger",
+  "TaskId": "Turtlebot3_led",
+  "DataSize": 8,
+  "Conflict": false,
+  "Type": "actuator"
+},
+{
+  "ResourceId": "wheel",
+  "RobotClass": "Turtlebot3_burger",
+  "TaskId": "Turtlebot3_wheel",
+  "DataSize": 16,
+  "Conflict": true,
+  "Type": "actuator"
+},
+{
+  "ResourceId": "obstacleDetector",
+  "RobotClass": "EPuckSim",
+  "TaskId": "EPuckSim_obstacleDetector",
+  "DataSize": 32,
+  "Conflict": false,
+  "Type": "proxy sensor",
+  "RequiredResource": [
+    "proximity"
+  ]
+},
+{
+  "ResourceId": "mineralDetector",
+  "RobotClass": "EPuckSim",
+  "TaskId": "EPuckSim_mineralDetector",
+  "DataSize": 4,
+  "Conflict": false,
+  "Type": "proxy sensor",
+  "RequiredResource": [
+    "getSignal"
+  ]
+},
+{
+  "ResourceId": "baseDetector",
+  "RobotClass": "EPuckSim",
+  "TaskId": "EPuckSim_baseDetector",
+  "DataSize": 4,
+  "Conflict": false,
+  "Type": "proxy sensor",
+  "RequiredResource": [
+    "getSignal"
+  ]
+},
+{
+  "ResourceId": "direction",
+  "RobotClass": "EPuckSim",
+  "TaskId": "EPuckSim_direction",
+  "DataSize": 4,
+  "Conflict": true,
+  "Type": "proxy actuator",
+  "RequiredResource": [
+    "wheel"
+  ]
+},
+{
+  "ResourceId": "getSignal",
+  "RobotClass": "EPuckSim",
+  "TaskId": "EPuckSim_getSignal",
+  "DataSize": 4,
+  "Conflict": false,
+  "Type": "sensor"
+},
+{
+  "ResourceId": "obstacleDetector",
+  "RobotClass": "Turtlebot3_burger",
+  "TaskId": "Turtlebot3_burger_obstacleDetector",
+  "DataSize": 32,
+  "Conflict": false,
+  "Type": "proxy sensor",
+  "RequiredResource": [
+    "lds"
+  ]
+},
+{
+  "ResourceId": "mineralDetector",
+  "RobotClass": "Turtlebot3_burger",
+  "TaskId": "Turtlebot3_burger_mineralDetector",
+  "DataSize": 4,
+  "Conflict": false,
+  "Type": "proxy sensor",
+  "RequiredResource": [
+    "color"
+  ]
+},
+{
+  "ResourceId": "baseDetector",
+  "RobotClass": "Turtlebot3_burger",
+  "TaskId": "Turtlebot3_burger_baseDetector",
+  "DataSize": 4,
+  "Conflict": false,
+  "Type": "proxy sensor",
+  "RequiredResource": [
+    "color"
+  ]
+},
+{
+  "ResourceId": "direction",
+  "RobotClass": "Turtlebot3_burger",
+  "TaskId": "Turtlebot3_burger_direction",
+  "DataSize": 4,
+  "Conflict": true,
+  "Type": "proxy actuator",
+  "RequiredResource": [
+    "wheel"
+  ]
+},
+{
+  "ResourceId": "ledControl",
+  "RobotClass": "Turtlebot3_burger",
+  "TaskId": "Turtlebot3_ledControl",
+  "DataSize": 4,
+  "Conflict": false,
+  "Type": "proxy actuator",
+  "RequiredResource": [
+    "led"
+  ]
+},
+{
+  "ResourceId": "ledControl",
+  "RobotClass": "EPuckSim",
+  "TaskId": "EPuckSim_ledControl",
+  "DataSize": 4,
+  "Conflict": false,
+  "Type": "proxy actuator",
+  "RequiredResource": [
+    "led"
+  ]
+}]

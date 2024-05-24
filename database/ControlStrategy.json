@@ -1,0 +1,293 @@
+[{
+  "ActionName": "action_simplest",
+  "RobotClass": "FakeBot",
+  "Impl": [
+    {
+      "condition": "TRUE",
+      "actionImplId": "action_simplest"
+    }
+  ]
+},
+{
+  "ActionName": "action_argument1",
+  "RobotClass": "FakeBot",
+  "Impl": [
+    {
+      "condition": "TRUE",
+      "actionImplId": "action_argument1"
+    }
+  ]
+},
+{
+  "ActionName": "action_argument2",
+  "RobotClass": "FakeBot",
+  "Impl": [
+    {
+      "condition": "TRUE",
+      "actionImplId": "action_argument2"
+    }
+  ]
+},
+{
+  "ActionName": "group_action_argument2WithSharedSumWithReturn",
+  "RobotClass": "FakeBot",
+  "Impl": [
+    {
+      "condition": "TRUE",
+      "actionImplId": "group_action_argument2WithSharedSumWithReturn"
+    }
+  ]
+},
+{
+  "StrategyId": "EPuckSim_escape_0",
+  "ActionName": "escape",
+  "RobotClass": "EPuckSim",
+  "Impl": [
+    {
+      "condition": "TRUE",
+      "actionImplId": "EPuckSim_escape_0"
+    }
+  ]
+},
+{
+  "StrategyId": "EPuckSim_putOutFire_0",
+  "ActionName": "putOutFire",
+  "RobotClass": "EPuckSim",
+  "Impl": [
+    {
+      "condition": "TRUE",
+      "actionImplId": "EPuckSim_putOutFire_0"
+    }
+  ]
+},
+{
+  "StrategyId": "EPuckSim_searchItem_0",
+  "ActionName": "searchItem",
+  "RobotClass": "EPuckSim",
+  "Impl": [
+    {
+      "condition": "TRUE",
+      "actionImplId": "EPuckSim_searchItem_0"
+    }
+  ]
+},
+{
+  "StrategyId": "EPuckSim_detectFire_0",
+  "ActionName": "detectFire",
+  "RobotClass": "EPuckSim",
+  "Impl": [
+    {
+      "condition": "TRUE",
+      "actionImplId": "EPuckSim_detectFire_0"
+    }
+  ]
+},
+{
+  "StrategyId": "P3DXSim_makeEvacuationPath_0",
+  "ActionName": "makeEvacuationPath",
+  "RobotClass": "P3DXSim",
+  "Impl": [
+    {
+      "condition": "TRUE",
+      "actionImplId": "P3DXSim_makeEvacuationPath_0"
+    }
+  ]
+},
+{
+  "StrategyId": "P3DXSim_detectFire_0",
+  "ActionName": "detectFire",
+  "RobotClass": "P3DXSim",
+  "Impl": [
+    {
+      "condition": "TRUE",
+      "actionImplId": "P3DXSim_detectFire_0"
+    }
+  ]
+},
+{
+  "StrategyId": "EPuckSim_moveTo_0",
+  "ActionName": "moveTo",
+  "RobotClass": "EPuckSim",
+  "Impl": [
+    {
+      "condition": "TRUE",
+      "actionImplId": "EPuckSim_moveTo_0"
+    }
+  ]
+},
+{
+  "StrategyId": "EPuckSim_searchMineral_0",
+  "ActionName": "searchMineral",
+  "RobotClass": "EPuckSim",
+  "Impl": [
+    {
+      "condition": "TRUE",
+      "actionImplId": "EPuckSim_searchMineral_0"
+    }
+  ]
+},
+{
+  "StrategyId": "EPuckSim_backToBase_0",
+  "ActionName": "backToBase",
+  "RobotClass": "EPuckSim",
+  "Impl": [
+    {
+      "condition": "TRUE",
+      "actionImplId": "EPuckSim_backToBase_0"
+    }
+  ]
+},
+{
+  "StrategyId": "EPuckSim_searchItemNearby",
+  "ActionName": "searchItem",
+  "RobotClass": "EPuckSim",
+  "Impl": [
+    {
+      "condition": "TRUE",
+      "actionImplId": "EPuckSim_searchItemNearby"
+    }
+  ]
+},
+{
+  "StrategyId": "EPuckSim_searchItemRandomWithoutMap",
+  "ActionName": "searchItem",
+  "RobotClass": "EPuckSim",
+  "Impl": [
+    {
+      "condition": "TRUE",
+      "actionImplId": "EPuckSim_searchItemRandomWithoutMap"
+    }
+  ]
+},
+{
+  "StrategyId": "Turtlebot3_burger_searchMineral_0",
+  "ActionName": "searchMineral",
+  "RobotClass": "Turtlebot3_burger",
+  "Impl": [
+    {
+      "condition": "TRUE",
+      "actionImplId": "Turtlebot3_burger_searchMineral_0"
+    }
+  ]
+},
+{
+  "StrategyId": "Turtlebot3_burger_backToBase_0",
+  "ActionName": "backToBase",
+  "RobotClass": "Turtlebot3_burger",
+  "Impl": [
+    {
+      "condition": "TRUE",
+      "actionImplId": "Turtlebot3_burger_backToBase_0"
+    }
+  ]
+},
+{
+  "StrategyId": "EPuckSim_collectMineral_0",
+  "ActionName": "collectMineral",
+  "RobotClass": "EPuckSim",
+  "Impl": [
+    {
+      "condition": "TRUE",
+      "actionImplId": "EPuckSim_collectMineral_0"
+    }
+  ]
+},
+{
+  "StrategyId": "EPuckSim_putMineral_0",
+  "ActionName": "putMineral",
+  "RobotClass": "EPuckSim",
+  "Impl": [
+    {
+      "condition": "TRUE",
+      "actionImplId": "EPuckSim_putMineral_0"
+    }
+  ]
+},
+{
+  "StrategyId": "Turtlebot3_burger_collectMineral_0",
+  "ActionName": "collectMineral",
+  "RobotClass": "Turtlebot3_burger",
+  "Impl": [
+    {
+      "condition": "TRUE",
+      "actionImplId": "Turtlebot3_burger_collectMineral_0"
+    }
+  ]
+},
+{
+  "StrategyId": "Turtlebot3_burger_putMineral_0",
+  "ActionName": "putMineral",
+  "RobotClass": "Turtlebot3_burger",
+  "Impl": [
+    {
+      "condition": "TRUE",
+      "actionImplId": "Turtlebot3_burger_putMineral_0"
+    }
+  ]
+},
+{
+  "StrategyId": "EPuckSim_report_0",
+  "ActionName": "report",
+  "RobotClass": "EPuckSim",
+  "Impl": [
+    {
+      "condition": "TRUE",
+      "actionImplId": "EPuckSim_report_0"
+    }
+  ]
+},
+{
+  "StrategyId": "EPuckSim_remoteControl_0",
+  "ActionName": "remoteControl",
+  "RobotClass": "EPuckSim",
+  "Impl": [
+    {
+      "condition": "TRUE",
+      "actionImplId": "EPuckSim_remoteControl_0"
+    }
+  ]
+},
+{
+  "StrategyId": "EPuckSim_getModeTransferCommand_0",
+  "ActionName": "getModeTransferCommand",
+  "RobotClass": "EPuckSim",
+  "Impl": [
+    {
+      "condition": "TRUE",
+      "actionImplId": "EPuckSim_getModeTransferCommand_0"
+    }
+  ]
+},
+{
+  "StrategyId": "P3DXSim_getModeTransferCommand_0",
+  "ActionName": "getModeTransferCommand",
+  "RobotClass": "P3DXSim",
+  "Impl": [
+    {
+      "condition": "TRUE",
+      "actionImplId": "P3DXSim_getModeTransferCommand_0"
+    }
+  ]
+},
+{
+  "StrategyId": "P3DXSim_remoteControl_0",
+  "ActionName": "remoteControl",
+  "RobotClass": "P3DXSim",
+  "Impl": [
+    {
+      "condition": "TRUE",
+      "actionImplId": "P3DXSim_remoteControl_0"
+    }
+  ]
+},
+{
+  "StrategyId": "EPuckSim_walkAround_0",
+  "ActionName": "walkAround",
+  "RobotClass": "EPuckSim",
+  "Impl": [
+    {
+      "condition": "TRUE",
+      "actionImplId": "EPuckSim_walkAround_0"
+    }
+  ]
+}]

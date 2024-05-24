@@ -1,0 +1,109 @@
+[{
+  "RobotClass": "FakeBot",
+  "Resource": [],
+  "Architecture": {
+    "primaryArchitecture": "desktop",
+    "architectureList": [
+      "desktop"
+    ]
+  },
+  "TagList": []
+},
+{
+  "RobotClass": "EPuckSim",
+  "Resource": [
+    "alarmFire",
+    "detectFire",
+    "detectItem",
+    "direction",
+    "extinguish",
+    "led",
+    "orientation",
+    "pose",
+    "position",
+    "proximity",
+    "sendSignal",
+    "wheel"
+  ],
+  "Architecture": {
+    "primaryArchitecture": "desktop",
+    "architectureList": [
+      "desktop"
+    ]
+  },
+  "TagList": []
+},
+{
+  "RobotClass": "P3DXSim",
+  "Resource": [
+    "alarmFire",
+    "orientation",
+    "position",
+    "ultrasonic",
+    "wheel"
+  ],
+  "Architecture": {
+    "primaryArchitecture": "desktop",
+    "architectureList": [
+      "desktop"
+    ]
+  },
+  "TagList": []
+},
+{
+  "RobotClass": "Turtlebot3_burger",
+  "Resource": [
+    "lds",
+    "color",
+    "camera",
+    "buzzer",
+    "led",
+    "wheel"
+  ],
+  "Architecture": {
+    "primaryArchitecture": "RaspberryPi4_8",
+    "architectureList": [
+      "RaspberryPi4_8",
+      "OpenCR"
+    ]
+  },
+  "TagList": []
+},
+{
+  "RobotClass": "Turtlebot3_waffle",
+  "Resource": [
+    "lds",
+    "color",
+    "camera",
+    "buzzer",
+    "led",
+    "wheel"
+  ],
+  "Architecture": {
+    "primaryArchitecture": "RaspberryPi4_8",
+    "architectureList": [
+      "RaspberryPi4_8",
+      "OpenCR"
+    ]
+  },
+  "TagList": []
+},
+{
+  "RobotClass": "Turtlebot3_tank",
+  "Resource": [
+    "lds",
+    "color",
+    "camera",
+    "buzzer",
+    "led",
+    "wheel"
+  ],
+  "Architecture": {
+    "primaryArchitecture": "RaspberryPi4_8",
+    "architectureList": [
+      "RaspberryPi4_8",
+      "OpenCR"
+    ]
+  },
+  "TagList": []
+}]

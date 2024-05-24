@@ -1,0 +1,126 @@
+[{
+  "Name": "INT32",
+  "Type": "semo_int32",
+  "Size": 4,
+  "Count": 1,
+  "CandidateValue": {
+    "max": 2147483647,
+    "min": -2147483648
+  }
+},
+{
+  "Name": "INT8",
+  "Type": "semo_int8",
+  "Size": 1,
+  "Count": 1,
+  "CandidateValue": {
+    "max": 128,
+    "min": -127
+  }
+},
+{
+  "Name": "INT16",
+  "Type": "semo_int16",
+  "Size": 2,
+  "Count": 1,
+  "CandidateValue": {
+    "max": 32767,
+    "min": -32768
+  }
+},
+{
+  "Name": "FLOAT",
+  "Type": "semo_float",
+  "Size": 4,
+  "Count": 1,
+  "CandidateValue": {
+    "max": {
+      "$numberLong": "9223372036854775807"
+    },
+    "min": {
+      "$numberLong": "-9223372036854775808"
+    }
+  }
+},
+{
+  "Name": "DOUBLE",
+  "Type": "semo_double",
+  "Size": 8,
+  "Count": 1,
+  "CandidateValue": {
+    "max": {
+      "$numberLong": "9223372036854775807"
+    },
+    "min": {
+      "$numberLong": "-9223372036854775808"
+    }
+  }
+},
+{
+  "Name": "TARGET_ROOM",
+  "Type": "enum",
+  "Size": 4,
+  "Count": 1,
+  "CandidateValue": {
+    "candidate": [
+      "ROOM1",
+      "ROOM2",
+      "ROOM3",
+      "BASE"
+    ]
+  }
+},
+{
+  "Name": "RESULT",
+  "Type": "enum",
+  "Size": 4,
+  "Count": 1,
+  "CandidateValue": {
+    "candidate": [
+      "FAIL",
+      "SUCCESS"
+    ]
+  }
+},
+{
+  "Name": "MAP",
+  "Type": "semo_int8",
+  "Size": 1,
+  "Count": 2500,
+  "CandidateValue": {
+    "min": 0,
+    "max": 1
+  }
+},
+{
+  "Name": "POSITION",
+  "Type": "semo_double",
+  "Size": 8,
+  "Count": 2,
+  "CandidateValue": {
+    "min": -10000,
+    "max": 10000
+  }
+},
+{
+  "Name": "ROLE",
+  "Type": "semo_int32",
+  "Size": 4,
+  "Count": 2,
+  "CandidateValue": {
+    "max": 2147483647,
+    "min": -2147483648
+  }
+},
+{
+  "Name": "MODE",
+  "Type": "enum",
+  "Size": 4,
+  "Count": 1,
+  "CandidateValue": {
+    "candidate": [
+      "REMOTE_CONTROL",
+      "AUTO_CONTROL"
+    ]
+  }
+}]

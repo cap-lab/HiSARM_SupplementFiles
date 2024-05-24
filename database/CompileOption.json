@@ -1,0 +1,239 @@
+[{
+  "DeviceName": "OrinNano",
+  "CrossCompile": {
+    "CompilerTarget": "aarch64-linux-gnu",
+    "SysRoot": "/home/xxxxxx/cross_env_aarch64",
+    "PkgConfigDir": [
+      "/usr/lib/aarch64-linux-gnu/pkgconfig",
+      "/usr/lib/aarch64-linux-gnu/openmpi/lib/pkgconfig",
+      "/usr/lib/aarch64-linux-gnu/open-coarrays/openmpi/pkgconfig",
+      "/usr/lib/pkgconfig",
+      "/usr/share/pkgconfig"
+    ],
+    "EnvironmentVariable": [
+      {
+        "name": "COPPELIA_SIM_DIR",
+        "value": "software_4.5.1"
+      },
+      {
+        "name": "ZMQ_LIBNAME",
+        "value": "simExtZMQ"
+      }
+    ]
+  },
+  "IncludePaths": [
+    "${SYSROOT_DIR}/home/xxxxxx/${COPPELIA_SIM_DIR}/zmqRemoteApi/clients/cpp",
+    "${SYSROOT_DIR}/home/xxxxxx/${COPPELIA_SIM_DIR}/zmqRemoteApi/clients/cpp/build/jsoncons/include"
+  ],
+  "LibraryPaths": [
+    "${SYSROOT_DIR}/home/xxxxxx/${COPPELIA_SIM_DIR}/simZMQ/build",
+    "${SYSROOT_DIR}/home/xxxxxx/${COPPELIA_SIM_DIR}/zmqRemoteApi/clients/cpp/build"
+  ],
+  "ExtraCXXFlags": [
+    "--std=c++17"
+  ],
+  "PostRunCommands": [
+    ""
+  ],
+  "PreRunCommands": [
+    ""
+  ],
+  "Simulation": true
+},
+{
+  "DeviceName": "RaspberryPi4_8",
+  "CrossCompile": {
+    "CompilerTarget": "arm-linux-gnueabihf",
+    "SysRoot": "/home/xxxxxx/cross_env",
+    "PkgConfigDir": [
+      "/usr/local/lib/arm-linux-gnueabihf/pkgconfig",
+      "/usr/lib/arm-linux-gnueabihf/pkgconfig",
+      "/usr/share/pkgconfig"
+    ],
+    "EnvironmentVariable": []
+  },
+  "PostRunCommands": [
+    "pkill v4l2rtspserver"
+  ],
+  "PreRunCommands": [
+    "v4l2rtspserver -W 480 -H 480 -F 15 -P 8554 /dev/video0 &"
+  ],
+  "IncludePaths": [],
+  "LibraryPaths": [],
+  "ExtraCXXFlags": [],
+  "Simulation": false
+},
+{
+  "DeviceName": "OpenCR",
+  "CrossCompile": {
+    "CompilerTarget": "",
+    "SysRoot": "",
+    "PkgConfigDir": [],
+    "EnvironmentVariable": [
+      {
+        "name": "ARDUINO_DIR",
+        "value": "/home/xxxxxx/arduino-ide_2.0.1_Linux_64bit"
+      }
+    ]
+  },
+  "PostRunCommands": [
+    "~/tools/opencr_reset /dev/ttyACM0 115200"
+  ],
+  "PreRunCommands": [
+    "~/tools/opencr_reset /dev/ttyACM0 115200"
+  ],
+  "Simulation": false
+},
+{
+  "DeviceName": "desktop",
+  "CrossCompile": {
+    "EnvironmentVariable": [
+      {
+        "name": "COPPELIA_SIM_DIR",
+        "value": "software_4.5.1"
+      },
+      {
+        "name": "ZMQ_LIBNAME",
+        "value": "simExtZMQ"
+      }
+    ]
+  },
+  "IncludePaths": [
+    "/home/xxxxxx/native_software/${COPPELIA_SIM_DIR}/zmqRemoteApi/clients/cpp",
+    "/home/xxxxxx/native_software/${COPPELIA_SIM_DIR}/zmqRemoteApi/clients/cpp/build/jsoncons/include"
+  ],
+  "LibraryPaths": [
+    "/home/xxxxxx/native_software/${COPPELIA_SIM_DIR}/simZMQ/build",
+    "/home/xxxxxx/native_software/${COPPELIA_SIM_DIR}/zmqRemoteApi/clients/cpp/build"
+  ],
+  "ExtraCXXFlags": [
+    "--std=c++17"
+  ],
+  "PostRunCommands": [
+    ""
+  ],
+  "PreRunCommands": [
+    ""
+  ],
+  "Simulation": true
+},
+{
+  "DeviceName": "XavierNX",
+  "CrossCompile": {
+    "CompilerTarget": "aarch64-linux-gnu",
+    "SysRoot": "/home/xxxxxx/cross_env_aarch64",
+    "PkgConfigDir": [
+      "/usr/lib/aarch64-linux-gnu/pkgconfig",
+      "/usr/lib/aarch64-linux-gnu/openmpi/lib/pkgconfig",
+      "/usr/lib/aarch64-linux-gnu/open-coarrays/openmpi/pkgconfig",
+      "/usr/lib/pkgconfig",
+      "/usr/share/pkgconfig"
+    ],
+    "EnvironmentVariable": [
+      {
+        "name": "COPPELIA_SIM_DIR",
+        "value": "software_4.5.1"
+      },
+      {
+        "name": "ZMQ_LIBNAME",
+        "value": "simExtZMQ"
+      }
+    ]
+  },
+  "IncludePaths": [
+    "${SYSROOT_DIR}/home/xxxxxx/${COPPELIA_SIM_DIR}/zmqRemoteApi/clients/cpp",
+    "${SYSROOT_DIR}/home/xxxxxx/${COPPELIA_SIM_DIR}/zmqRemoteApi/clients/cpp/build/jsoncons/include"
+  ],
+  "LibraryPaths": [
+    "${SYSROOT_DIR}/home/xxxxxx/${COPPELIA_SIM_DIR}/simZMQ/build",
+    "${SYSROOT_DIR}/home/xxxxxx/${COPPELIA_SIM_DIR}/zmqRemoteApi/clients/cpp/build"
+  ],
+  "ExtraCXXFlags": [
+    "--std=c++17"
+  ],
+  "PostRunCommands": [
+    ""
+  ],
+  "PreRunCommands": [
+    ""
+  ],
+  "Simulation": true
+},
+{
+  "DeviceName": "Xavier",
+  "CrossCompile": {
+    "CompilerTarget": "aarch64-linux-gnu",
+    "SysRoot": "/home/xxxxxx/cross_env_aarch64",
+    "PkgConfigDir": [
+      "/usr/lib/aarch64-linux-gnu/pkgconfig",
+      "/usr/lib/aarch64-linux-gnu/openmpi/lib/pkgconfig",
+      "/usr/lib/aarch64-linux-gnu/open-coarrays/openmpi/pkgconfig",
+      "/usr/lib/pkgconfig",
+      "/usr/share/pkgconfig"
+    ],
+    "EnvironmentVariable": [
+      {
+        "name": "COPPELIA_SIM_DIR",
+        "value": "software_4.5.1"
+      },
+      {
+        "name": "ZMQ_LIBNAME",
+        "value": "simExtZMQ"
+      }
+    ]
+  },
+  "IncludePaths": [
+    "${SYSROOT_DIR}/home/xxxxxx/${COPPELIA_SIM_DIR}/zmqRemoteApi/clients/cpp",
+    "${SYSROOT_DIR}/home/xxxxxx/${COPPELIA_SIM_DIR}/zmqRemoteApi/clients/cpp/build/jsoncons/include"
+  ],
+  "LibraryPaths": [
+    "${SYSROOT_DIR}/home/xxxxxx/${COPPELIA_SIM_DIR}/simZMQ/build",
+    "${SYSROOT_DIR}/home/xxxxxx/${COPPELIA_SIM_DIR}/zmqRemoteApi/clients/cpp/build"
+  ],
+  "ExtraCXXFlags": [
+    "--std=c++17"
+  ],
+  "PostRunCommands": [
+    ""
+  ],
+  "PreRunCommands": [
+    ""
+  ],
+  "Simulation": true
+},
+{
+  "DeviceName": "RaspberryPi4_8",
+  "CrossCompile": {
+    "CompilerTarget": "arm-linux-gnueabihf",
+    "SysRoot": "/home/xxxxxx/cross_env",
+    "PkgConfigDir": [
+      "/usr/local/lib/arm-linux-gnueabihf/pkgconfig",
+      "/usr/lib/arm-linux-gnueabihf/pkgconfig",
+      "/usr/share/pkgconfig"
+    ],
+    "EnvironmentVariable": [
+      {
+        "name": "COPPELIA_SIM_DIR",
+        "value": "software_4.5.1"
+      },
+      {
+        "name": "ZMQ_LIBNAME",
+        "value": "simExtZMQ"
+      }
+    ]
+  },
+  "PostRunCommands": [],
+  "PreRunCommands": [],
+  "IncludePaths": [
+    "${SYSROOT_DIR}/home/xxxxxx/${COPPELIA_SIM_DIR}/zmqRemoteApi/clients/cpp",
+    "${SYSROOT_DIR}/home/xxxxxx/${COPPELIA_SIM_DIR}/zmqRemoteApi/clients/cpp/build/jsoncons/include"
+  ],
+  "LibraryPaths": [
+    "${SYSROOT_DIR}/home/xxxxxx/${COPPELIA_SIM_DIR}/simZMQ/build",
+    "${SYSROOT_DIR}/home/xxxxxx/${COPPELIA_SIM_DIR}/zmqRemoteApi/clients/cpp/build"
+  ],
+  "ExtraCXXFlags": [
+    "--std=c++17"
+  ],
+  "Simulation": true
+}]

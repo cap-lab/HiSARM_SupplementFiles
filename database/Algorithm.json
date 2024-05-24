@@ -1,0 +1,189 @@
+[{
+  "Name": "action_simplest",
+  "Input": [],
+  "Output": []
+},
+{
+  "Name": "group_action_argument2WithSharedSumWithReturn",
+  "Input": [
+    "INT32",
+    "INT32"
+  ],
+  "Output": [
+    "INT32"
+  ],
+  "Swarm": {
+    "sharedData": [
+      "INT32"
+    ],
+    "synchronization": false
+  }
+},
+{
+  "Name": "action_argument1",
+  "Input": [
+    "INT32"
+  ],
+  "Output": []
+},
+{
+  "Name": "action_argument2",
+  "Input": [
+    "INT32",
+    "INT32"
+  ],
+  "Output": []
+},
+{
+  "Name": "moveTo",
+  "Input": [
+    "TARGET_ROOM"
+  ],
+  "Output": [
+    "RESULT"
+  ]
+},
+{
+  "Name": "makeEvacuationPath",
+  "Input": [],
+  "Output": [],
+  "Swarm": {
+    "sharedData": [
+      "INT32"
+    ],
+    "synchronization": true
+  }
+},
+{
+  "Name": "searchItem",
+  "Input": [
+    "TARGET_ROOM"
+  ],
+  "Output": [
+    "RESULT"
+  ],
+  "Swarm": {
+    "sharedData": [
+      "INT32",
+      "MAP"
+    ],
+    "synchronization": true
+  }
+},
+{
+  "Name": "detectFire",
+  "Input": [],
+  "Output": [
+    "RESULT"
+  ],
+  "Swarm": {
+    "sharedData": [
+      "INT8"
+    ],
+    "synchronization": false
+  }
+},
+{
+  "Name": "putOutFire",
+  "Input": [
+    "TARGET_ROOM"
+  ],
+  "Output": [
+    "RESULT"
+  ],
+  "Swarm": {
+    "sharedData": [
+      "RESULT",
+      "MAP"
+    ],
+    "synchronization": true
+  }
+},
+{
+  "Name": "escape",
+  "Input": [],
+  "Output": [
+    "RESULT"
+  ]
+},
+{
+  "Name": "searchMineral",
+  "Input": [],
+  "Output": [
+    "RESULT",
+    "RESULT"
+  ],
+  "Swarm": {
+    "sharedData": [
+      "INT32"
+    ],
+    "synchronization": false
+  }
+},
+{
+  "Name": "backToBase",
+  "Input": [],
+  "Output": [
+    "RESULT"
+  ]
+},
+{
+  "Name": "collectMineral",
+  "Input": [],
+  "Output": [
+    "RESULT"
+  ]
+},
+{
+  "Name": "putMineral",
+  "Input": [],
+  "Output": [
+    "RESULT"
+  ]
+},
+{
+  "Name": "report",
+  "Input": [],
+  "Output": [],
+  "Swarm": {
+    "sharedData": [],
+    "synchronization": false
+  }
+},
+{
+  "Name": "remoteControl",
+  "Input": [],
+  "Output": [],
+  "Swarm": {
+    "sharedData": [
+      "INT8"
+    ],
+    "synchronization": false
+  }
+},
+{
+  "Name": "getModeTransferCommand",
+  "Input": [],
+  "Output": [
+    "MODE"
+  ],
+  "Swarm": {
+    "sharedData": [],
+    "synchronization": false
+  }
+},
+{
+  "Name": "walkAround",
+  "Input": [
+    "TARGET_ROOM"
+  ],
+  "Output": [
+    "RESULT"
+  ],
+  "Swarm": {
+    "sharedData": [
+      "MAP"
+    ],
+    "synchronization": true
+  }
+}]

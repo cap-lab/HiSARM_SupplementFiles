@@ -1,0 +1,14 @@
+[{
+  "GroupingId": "DTA",
+  "CompileTimeFile": "Consensus/GroupSelection/DTA/DTA.jar",
+  "CompileTimeClass": "com.dynamicgrouping.CompileTimeAllocator",
+  "RunTimeTask": "grouping_algorithm_dta",
+  "SharedDataSize": 12
+},
+{
+  "GroupingId": "STA",
+  "CompileTimeFile": "Consensus/GroupSelection/STA/STA.jar",
+  "CompileTimeClass": "com.staticgrouping.CompileTimeAllocator",
+  "RunTimeTask": "grouping_algorithm_sta",
+  "SharedDataSize": 1
+}]

@@ -1,0 +1,273 @@
+[{
+  "DeviceId": "desktop_ws",
+  "Architecture": "desktop",
+  "CommunicationInfo": [
+    {
+      "type": "EThernet/Wi-Fi",
+      "address": {
+        "ip": "127.0.0.1",
+        "port": 8080
+      }
+    }
+  ],
+  "UploadInfo": {
+    "type": "ssh",
+    "address": {
+      "ip": "127.0.0.1",
+      "port": "22",
+      "username": "xxxxxx"
+    }
+  }
+},
+{
+  "DeviceId": "orin_nano1",
+  "Architecture": "OrinNano",
+  "CommunicationInfo": [
+    {
+      "type": "EThernet/Wi-Fi",
+      "address": {
+        "ip": "127.0.0.1",
+        "port": 22
+      }
+    }
+  ],
+  "UploadInfo": {
+    "type": "ssh",
+    "address": {
+      "ip": "127.0.0.1",
+      "port": "22",
+      "username": "caplab"
+    }
+  }
+},
+{
+  "DeviceId": "orin_nano2",
+  "Architecture": "OrinNano",
+  "CommunicationInfo": [
+    {
+      "type": "EThernet/Wi-Fi",
+      "address": {
+        "ip": "127.0.0.1",
+        "port": 22
+      }
+    }
+  ],
+  "UploadInfo": {
+    "type": "ssh",
+    "address": {
+      "ip": "127.0.0.1",
+      "port": "22",
+      "username": "caplab"
+    }
+  }
+},
+{
+  "DeviceId": "orin_nano3",
+  "Architecture": "OrinNano",
+  "CommunicationInfo": [
+    {
+      "type": "EThernet/Wi-Fi",
+      "address": {
+        "ip": "127.0.0.1",
+        "port": 22
+      }
+    }
+  ],
+  "UploadInfo": {
+    "type": "ssh",
+    "address": {
+      "ip": "127.0.0.1",
+      "port": "22",
+      "username": "caplab"
+    }
+  }
+},
+{
+  "DeviceId": "notebook",
+  "Architecture": "desktop",
+  "CommunicationInfo": [
+    {
+      "type": "EThernet/Wi-Fi",
+      "address": {
+        "ip": "127.0.0.1",
+        "port": 22
+      }
+    }
+  ],
+  "UploadInfo": {
+    "type": "ssh",
+    "address": {
+      "ip": "127.0.0.1",
+      "port": "22",
+      "username": "caplab"
+    }
+  }
+},
+{
+  "DeviceId": "orin_nano4",
+  "Architecture": "OrinNano",
+  "CommunicationInfo": [
+    {
+      "type": "EThernet/Wi-Fi",
+      "address": {
+        "ip": "127.0.0.1",
+        "port": 22
+      }
+    }
+  ],
+  "UploadInfo": {
+    "type": "ssh",
+    "address": {
+      "ip": "127.0.0.1",
+      "port": "22",
+      "username": "caplab"
+    }
+  }
+},
+{
+  "DeviceId": "xavier_nx1",
+  "Architecture": "XavierNX",
+  "CommunicationInfo": [
+    {
+      "type": "EThernet/Wi-Fi",
+      "address": {
+        "ip": "127.0.0.1",
+        "port": 22
+      }
+    }
+  ],
+  "UploadInfo": {
+    "type": "ssh",
+    "address": {
+      "ip": "127.0.0.1",
+      "port": "22",
+      "username": "caplab"
+    }
+  }
+},
+{
+  "DeviceId": "agx_xavier1",
+  "Architecture": "Xavier",
+  "CommunicationInfo": [
+    {
+      "type": "EThernet/Wi-Fi",
+      "address": {
+        "ip": "127.0.0.1",
+        "port": 22
+      }
+    }
+  ],
+  "UploadInfo": {
+    "type": "ssh",
+    "address": {
+      "ip": "127.0.0.1",
+      "port": "45560",
+      "username": "jrkim"
+    }
+  }
+},
+{
+  "DeviceId": "Burger_1",
+  "Architecture": "RaspberryPi4_8",
+  "CommunicationInfo": [
+    {
+      "type": "ETHERNET_WIFI",
+      "address": {
+        "ip": "127.0.0.1",
+        "port": 8080
+      }
+    }
+  ],
+  "UploadInfo": {
+    "type": "ssh",
+    "address": {
+      "ip": "127.0.0.1",
+      "port": "22",
+      "username": "xxxxxx"
+    }
+  }
+},
+{
+  "DeviceId": "Burger_2",
+  "Architecture": "RaspberryPi4_8",
+  "CommunicationInfo": [
+    {
+      "type": "ETHERNET_WIFI",
+      "address": {
+        "ip": "127.0.0.1",
+        "port": 8080
+      }
+    }
+  ],
+  "UploadInfo": {
+    "type": "ssh",
+    "address": {
+      "ip": "127.0.0.1",
+      "port": "22",
+      "username": "xxxxxx"
+    }
+  }
+},
+{
+  "DeviceId": "Burger_6",
+  "Architecture": "RaspberryPi4_8",
+  "CommunicationInfo": [
+    {
+      "type": "ETHERNET_WIFI",
+      "address": {
+        "ip": "127.0.0.1",
+        "port": 8080
+      }
+    }
+  ],
+  "UploadInfo": {
+    "type": "ssh",
+    "address": {
+      "ip": "127.0.0.1",
+      "port": "22",
+      "username": "xxxxxx"
+    }
+  }
+},
+{
+  "DeviceId": "Burger_3",
+  "Architecture": "RaspberryPi4_8",
+  "CommunicationInfo": [
+    {
+      "type": "ETHERNET_WIFI",
+      "address": {
+        "ip": "127.0.0.1",
+        "port": 8080
+      }
+    }
+  ],
+  "UploadInfo": {
+    "type": "ssh",
+    "address": {
+      "ip": "127.0.0.1",
+      "port": "22",
+      "username": "xxxxxx"
+    }
+  }
+},
+{
+  "DeviceId": "Burger_5",
+  "Architecture": "RaspberryPi4_8",
+  "CommunicationInfo": [
+    {
+      "type": "ETHERNET_WIFI",
+      "address": {
+        "ip": "127.0.0.1",
+        "port": 8080
+      }
+    }
+  ],
+  "UploadInfo": {
+    "type": "ssh",
+    "address": {
+      "ip": "127.0.0.1",
+      "port": "22",
+      "username": "xxxxxx"
+    }
+  }
+}]

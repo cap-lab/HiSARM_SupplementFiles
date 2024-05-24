@@ -1,0 +1,132 @@
+[{
+  "DeviceName": "desktop",
+  "OS": "Linux",
+  "CPU": "x86_64",
+  "Processor": [
+    {
+      "name": "i7",
+      "type": "CPU",
+      "numberOfCores": 4,
+      "clockFrequency": 3400
+    }
+  ],
+  "Memory": {
+    "size": 128,
+    "unit": "GiB"
+  },
+  "Modules": [],
+  "EnvironmentVariable": []
+},
+{
+  "DeviceName": "OrinNano",
+  "OS": "Linux",
+  "CPU": "arm64",
+  "Processor": [
+    {
+      "name": "A78AE",
+      "type": "CPU",
+      "numberOfCores": 6,
+      "clockFrequency": 1510
+    }
+  ],
+  "Memory": {
+    "size": 8,
+    "unit": "GiB"
+  },
+  "Modules": [],
+  "EnvironmentVariable": []
+},
+{
+  "DeviceName": "OpenCR",
+  "OS": "Arduino",
+  "CPU": "samd",
+  "Processor": [
+    {
+      "name": "ARM_cortex-m7",
+      "type": "CPU",
+      "os": "NO_OS",
+      "numberOfCores": 1,
+      "clockFrequency": 216
+    }
+  ],
+  "Memory": {
+    "size": 320,
+    "unit": "KiB"
+  },
+  "Network": [
+    "USB"
+  ],
+  "Modules": [],
+  "EnvironmentVariable": [
+    {
+      "name": "BOARD_TAG",
+      "value": "OpenCR"
+    },
+    {
+      "name": "ARDUINO_LIBS",
+      "value": "DynamixelSDK OLLO"
+    }
+  ]
+},
+{
+  "DeviceName": "RaspberryPi4_8",
+  "OS": "Linux",
+  "CPU": "x86_64",
+  "Processor": [
+    {
+      "name": "i7",
+      "type": "CPU",
+      "os": "LINUX",
+      "numberOfCores": 4,
+      "clockFrequency": 1500
+    }
+  ],
+  "Memory": {
+    "size": 2,
+    "unit": "GiB"
+  },
+  "Network": [
+    "Ethernet/Wi-Fi",
+    "USB"
+  ],
+  "Modules": [],
+  "EnvironmentVariable": []
+},
+{
+  "DeviceName": "XavierNX",
+  "OS": "Linux",
+  "CPU": "arm64",
+  "Processor": [
+    {
+      "name": "Carmel",
+      "type": "CPU",
+      "numberOfCores": 6,
+      "clockFrequency": 1420
+    }
+  ],
+  "Memory": {
+    "size": 8,
+    "unit": "GiB"
+  },
+  "Modules": [],
+  "EnvironmentVariable": []
+},
+{
+  "DeviceName": "Xavier",
+  "OS": "Linux",
+  "CPU": "arm64",
+  "Processor": [
+    {
+      "name": "Carmel",
+      "type": "CPU",
+      "numberOfCores": 8,
+      "clockFrequency": 2265
+    }
+  ],
+  "Memory": {
+    "size": 32,
+    "unit": "GiB"
+  },
+  "Modules": [],
+  "EnvironmentVariable": []
+}]

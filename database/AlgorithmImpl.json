@@ -1,0 +1,296 @@
+[{
+  "ActionImplId": "action_simplest",
+  "ActionName": "action_simplest",
+  "RobotClass": "FakeBot",
+  "TaskId": "action_simplest",
+  "ReturnImmediate": false,
+  "Resource": []
+},
+{
+  "ActionImplId": "action_argument1",
+  "ActionName": "action_argument1",
+  "RobotClass": "FakeBot",
+  "TaskId": "action_argument1",
+  "ReturnImmediate": false,
+  "Resource": []
+},
+{
+  "ActionImplId": "action_argument2",
+  "ActionName": "action_argument2",
+  "RobotClass": "FakeBot",
+  "TaskId": "action_argument2",
+  "ReturnImmediate": false,
+  "Resource": []
+},
+{
+  "ActionImplId": "group_action_argument2WithSharedSumWithReturn",
+  "ActionName": "group_action_argument2WithSharedSumWithReturn",
+  "RobotClass": "FakeBot",
+  "TaskId": "group_action_argument2WithSharedSumWithReturn",
+  "ReturnImmediate": false,
+  "Resource": []
+},
+{
+  "ActionImplId": "EPuckSim_moveTo_0",
+  "ActionName": "moveTo",
+  "RobotClass": "EPuckSim",
+  "TaskId": "EPuckSim_moveTo_0",
+  "ReturnImmediate": false,
+  "Resource": [
+    "position",
+    "orientation",
+    "proximity",
+    "wheel"
+  ]
+},
+{
+  "ActionImplId": "EPuckSim_putOutFire_0",
+  "ActionName": "putOutFire",
+  "RobotClass": "EPuckSim",
+  "TaskId": "EPuckSim_putOutFire_0",
+  "ReturnImmediate": false,
+  "Resource": [
+    "detectFire",
+    "extinguish",
+    "led",
+    "position",
+    "orientation",
+    "proximity",
+    "wheel"
+  ]
+},
+{
+  "ActionImplId": "EPuckSim_searchItem_0",
+  "ActionName": "searchItem",
+  "RobotClass": "EPuckSim",
+  "TaskId": "EPuckSim_searchItemRandom",
+  "ReturnImmediate": false,
+  "Resource": [
+    "detectItem",
+    "led",
+    "sendSignal",
+    "position",
+    "orientation",
+    "proximity",
+    "wheel"
+  ]
+},
+{
+  "ActionImplId": "EPuckSim_detectFire_0",
+  "ActionName": "detectFire",
+  "RobotClass": "EPuckSim",
+  "TaskId": "detectFire_0",
+  "ReturnImmediate": false,
+  "Resource": [
+    "alarmFire"
+  ]
+},
+{
+  "ActionImplId": "P3DXSim_makeEvacuationPath_0",
+  "ActionName": "makeEvacuationPath",
+  "RobotClass": "P3DXSim",
+  "TaskId": "makeEvacuationPath_0",
+  "ReturnImmediate": false,
+  "Resource": [
+    "position",
+    "orientation",
+    "ultrasonic",
+    "wheel"
+  ]
+},
+{
+  "ActionImplId": "P3DXSim_detectFire_0",
+  "ActionName": "detectFire",
+  "RobotClass": "P3DXSim",
+  "TaskId": "detectFire_0",
+  "ReturnImmediate": false,
+  "Resource": [
+    "alarmFire"
+  ]
+},
+{
+  "ActionImplId": "EPuckSim_escape_0",
+  "ActionName": "escape",
+  "RobotClass": "EPuckSim",
+  "TaskId": "EPuckSim_escape_0",
+  "ReturnImmediate": false,
+  "Resource": [
+    "position",
+    "orientation",
+    "proximity",
+    "wheel"
+  ]
+},
+{
+  "ActionImplId": "EPuckSim_searchMineral_0",
+  "ActionName": "searchMineral",
+  "RobotClass": "EPuckSim",
+  "TaskId": "searchMineral_0",
+  "ReturnImmediate": false,
+  "Resource": [
+    "obstacleDetector",
+    "mineralDetector",
+    "direction"
+  ]
+},
+{
+  "ActionImplId": "EPuckSim_backToBase_0",
+  "ActionName": "backToBase",
+  "RobotClass": "EPuckSim",
+  "TaskId": "backToBase_0",
+  "ReturnImmediate": false,
+  "Resource": [
+    "obstacleDetector",
+    "baseDetector",
+    "direction"
+  ]
+},
+{
+  "ActionImplId": "EPuckSim_searchItemNearby",
+  "ActionName": "searchItem",
+  "RobotClass": "EPuckSim",
+  "TaskId": "EPuckSim_searchItemNearby",
+  "ReturnImmediate": false,
+  "Resource": [
+    "detectItem",
+    "led",
+    "sendSignal",
+    "position",
+    "orientation",
+    "proximity",
+    "wheel"
+  ]
+},
+{
+  "ActionImplId": "EPuckSim_searchItemRandomWithoutMap",
+  "ActionName": "searchItem",
+  "RobotClass": "EPuckSim",
+  "TaskId": "EPuckSim_searchItemRandomWithoutMap",
+  "ReturnImmediate": false,
+  "Resource": [
+    "detectItem",
+    "led",
+    "sendSignal",
+    "position",
+    "orientation",
+    "proximity",
+    "wheel"
+  ]
+},
+{
+  "ActionImplId": "Turtlebot3_burger_searchMineral_0",
+  "ActionName": "searchMineral",
+  "RobotClass": "Turtlebot3_burger",
+  "TaskId": "searchMineral_0",
+  "ReturnImmediate": false,
+  "Resource": [
+    "obstacleDetector",
+    "mineralDetector",
+    "direction"
+  ]
+},
+{
+  "ActionImplId": "Turtlebot3_burger_backToBase_0",
+  "ActionName": "backToBase",
+  "RobotClass": "Turtlebot3_burger",
+  "TaskId": "backToBase_0",
+  "ReturnImmediate": false,
+  "Resource": [
+    "obstacleDetector",
+    "baseDetector",
+    "direction"
+  ]
+},
+{
+  "ActionImplId": "EPuckSim_collectMineral_0",
+  "ActionName": "collectMineral",
+  "RobotClass": "EPuckSim",
+  "TaskId": "collectMineral_0",
+  "ReturnImmediate": false,
+  "Resource": [
+    "ledControl"
+  ]
+},
+{
+  "ActionImplId": "EPuckSim_putMineral_0",
+  "ActionName": "putMineral",
+  "RobotClass": "EPuckSim",
+  "TaskId": "putMineral_0",
+  "ReturnImmediate": false,
+  "Resource": [
+    "ledControl"
+  ]
+},
+{
+  "ActionImplId": "Turtlebot3_burger_collectMineral_0",
+  "ActionName": "collectMineral",
+  "RobotClass": "Turtlebot3_burger",
+  "TaskId": "collectMineral_0",
+  "ReturnImmediate": false,
+  "Resource": [
+    "ledControl"
+  ]
+},
+{
+  "ActionImplId": "Turtlebot3_burger_putMineral_0",
+  "ActionName": "putMineral",
+  "RobotClass": "Turtlebot3_burger",
+  "TaskId": "putMineral_0",
+  "ReturnImmediate": false,
+  "Resource": [
+    "ledControl"
+  ]
+},
+{
+  "ActionImplId": "EPuckSim_report_0",
+  "ActionName": "report",
+  "RobotClass": "EPuckSim",
+  "TaskId": "report_0",
+  "ReturnImmediate": false,
+  "Resource": []
+},
+{
+  "ActionImplId": "EPuckSim_remoteControl_0",
+  "ActionName": "remoteControl",
+  "RobotClass": "EPuckSim",
+  "TaskId": "remoteControlLocal",
+  "ReturnImmediate": false,
+  "Resource": []
+},
+{
+  "ActionImplId": "EPuckSim_getModeTransferCommand_0",
+  "ActionName": "getModeTransferCommand",
+  "RobotClass": "EPuckSim",
+  "TaskId": "getModeTransferCommandLocal",
+  "ReturnImmediate": false,
+  "Resource": []
+},
+{
+  "ActionImplId": "P3DXSim_getModeTransferCommand_0",
+  "ActionName": "getModeTransferCommand",
+  "RobotClass": "P3DXSim",
+  "TaskId": "getModeTransferCommandLocal",
+  "ReturnImmediate": false,
+  "Resource": []
+},
+{
+  "ActionImplId": "P3DXSim_remoteControl_0",
+  "ActionName": "remoteControl",
+  "RobotClass": "P3DXSim",
+  "TaskId": "remoteControlLocal",
+  "ReturnImmediate": false,
+  "Resource": []
+},
+{
+  "ActionImplId": "EPuckSim_walkAround_0",
+  "ActionName": "walkAround",
+  "RobotClass": "EPuckSim",
+  "TaskId": "EPuckSim_walkAround_0",
+  "ReturnImmediate": false,
+  "Resource": [
+    "position",
+    "orientation",
+    "proximity",
+    "wheel"
+  ]
+}]

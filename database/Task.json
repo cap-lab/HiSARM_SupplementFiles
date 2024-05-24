@@ -1,0 +1,2879 @@
+[{
+  "TaskId": "action_simplest",
+  "CICFile": "action_simplest.cic",
+  "Deadline": {
+    "unit": "ms",
+    "time": 1
+  },
+  "Period": {
+    "unit": "ms",
+    "time": 1
+  },
+  "Language": "C++",
+  "CompileFlags": "",
+  "LinkFlags": "",
+  "HasSubGraph": true,
+  "RunCOndition": "",
+  "ExtraSetting": [],
+  "Communication": [],
+  "PortMap": [],
+  "File": [
+    {
+      "isDirectory": false,
+      "path": "Test/action_simplest.cic"
+    }
+  ]
+},
+{
+  "TaskId": "action_argument1",
+  "CICFile": "action_argument1.cic",
+  "Deadline": {
+    "unit": "ms",
+    "time": 1
+  },
+  "Period": {
+    "unit": "ms",
+    "time": 1
+  },
+  "Language": "C++",
+  "CompileFlags": "",
+  "LinkFlags": "",
+  "HasSubGraph": true,
+  "RunCOndition": "",
+  "ExtraSetting": [],
+  "Communication": [
+    {
+      "name": "arg1",
+      "direction": "IN",
+      "sampleSize": 4,
+      "index": 0
+    }
+  ],
+  "PortMap": [],
+  "File": [
+    {
+      "isDirectory": false,
+      "path": "Test/action_argument1.cic"
+    }
+  ]
+},
+{
+  "TaskId": "action_argument2",
+  "CICFile": "action_argument2.cic",
+  "Deadline": {
+    "unit": "ms",
+    "time": 1
+  },
+  "Period": {
+    "unit": "ms",
+    "time": 1
+  },
+  "Language": "C++",
+  "CompileFlags": "",
+  "LinkFlags": "",
+  "HasSubGraph": true,
+  "RunCOndition": "",
+  "ExtraSetting": [],
+  "Communication": [
+    {
+      "name": "arg1",
+      "direction": "IN",
+      "sampleSize": 4,
+      "index": 0
+    },
+    {
+      "name": "arg2",
+      "direction": "IN",
+      "sampleSize": 4,
+      "index": 1
+    }
+  ],
+  "PortMap": [],
+  "File": [
+    {
+      "isDirectory": false,
+      "path": "Test/action_argument2.cic"
+    }
+  ]
+},
+{
+  "TaskId": "group_action_argument2WithSharedSumWithReturn",
+  "CICFile": "group_action_argument2WithSharedSumWithReturn.cic",
+  "Deadline": {
+    "unit": "ms",
+    "time": 1
+  },
+  "Period": {
+    "unit": "ms",
+    "time": 1
+  },
+  "Language": "C++",
+  "CompileFlags": "",
+  "LinkFlags": "",
+  "HasSubGraph": true,
+  "RunCOndition": "",
+  "ExtraSetting": [],
+  "Communication": [
+    {
+      "name": "arg1",
+      "type": "channel",
+      "direction": "IN",
+      "sampleSize": 4,
+      "index": 0
+    },
+    {
+      "name": "max",
+      "type": "channel",
+      "direction": "IN",
+      "sampleSize": 4,
+      "index": 1
+    },
+    {
+      "name": "libGroupSUm",
+      "type": "library",
+      "index": 0
+    },
+    {
+      "name": "ret",
+      "type": "channel",
+      "direction": "OUT",
+      "smapleSize": 4,
+      "index": 0
+    }
+  ],
+  "PortMap": [],
+  "File": [
+    {
+      "isDirectory": false,
+      "path": "Test/group_action_argument2WithSharedSumWithReturn.cic"
+    }
+  ]
+},
+{
+  "TaskId": "FakeBot_sensor",
+  "CICFile": "sensor.cic",
+  "Deadline": {
+    "unit": "ms",
+    "time": 5
+  },
+  "Period": {
+    "unit": "ms",
+    "time": 100
+  },
+  "Language": "C++",
+  "CompileFlags": "",
+  "LinkFlags": "",
+  "HasSubGraph": true,
+  "RunCOndition": "",
+  "ExtraSetting": [],
+  "Communication": [
+    {
+      "name": "sensor",
+      "type": "multicast",
+      "direction": "OUT",
+      "sampleSize": 4,
+      "index": 0
+    }
+  ],
+  "PortMap": [],
+  "File": [
+    {
+      "isDirectory": false,
+      "path": "Test/sensor.cic"
+    }
+  ]
+},
+{
+  "TaskId": "FakeBot_actuator",
+  "CICFile": "actuator.cic",
+  "Deadline": {
+    "unit": "ms",
+    "time": 5
+  },
+  "Period": {
+    "unit": "ms",
+    "time": 100
+  },
+  "Language": "C++",
+  "CompileFlags": "",
+  "LinkFlags": "",
+  "HasSubGraph": true,
+  "RunCOndition": "",
+  "ExtraSetting": [],
+  "Communication": [
+    {
+      "name": "actuator",
+      "type": "multicast",
+      "direction": "IN",
+      "sampleSize": 4,
+      "index": 0
+    }
+  ],
+  "PortMap": [],
+  "File": [
+    {
+      "isDirectory": false,
+      "path": "Test/actuator.cic"
+    }
+  ]
+},
+{
+  "TaskId": "EPuckSim_escape_0",
+  "CICFile": "escape.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 100,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "",
+  "LinkFlags": "",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "channel",
+      "name": "arrived",
+      "direction": "OUT",
+      "sampleSize": 4,
+      "index": 0
+    },
+    {
+      "type": "resource",
+      "name": "position",
+      "direction": "IN"
+    },
+    {
+      "type": "resource",
+      "name": "orientation",
+      "direction": "IN"
+    },
+    {
+      "type": "resource",
+      "name": "proximity",
+      "direction": "IN"
+    },
+    {
+      "type": "resource",
+      "name": "wheel",
+      "direction": "OUT"
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [
+    {
+      "type": "Extra Header",
+      "name": "EPuckSim_move.h"
+    },
+    {
+      "type": "Extra Source",
+      "name": "EPuckSim_move.cpp"
+    }
+  ],
+  "File": [
+    {
+      "isDirectory": false,
+      "path": "Algorithm/escape/escape.cic"
+    },
+    {
+      "isDirectory": true,
+      "path": "Resource/EPuckSim/Extra/move"
+    }
+  ]
+},
+{
+  "TaskId": "EPuckSim_moveTo_0",
+  "CICFile": "moveTo.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 100,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "",
+  "LinkFlags": "",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "channel",
+      "name": "area",
+      "direction": "IN",
+      "sampleSize": 4,
+      "index": 0
+    },
+    {
+      "type": "channel",
+      "name": "arrived",
+      "direction": "OUT",
+      "sampleSize": 4,
+      "index": 0
+    },
+    {
+      "type": "resource",
+      "name": "position",
+      "direction": "IN"
+    },
+    {
+      "type": "resource",
+      "name": "orientation",
+      "direction": "IN"
+    },
+    {
+      "type": "resource",
+      "name": "proximity",
+      "direction": "IN"
+    },
+    {
+      "type": "resource",
+      "name": "wheel",
+      "direction": "OUT"
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [
+    {
+      "type": "Extra Header",
+      "name": "EPuckSim_move.h"
+    },
+    {
+      "type": "Extra Source",
+      "name": "EPuckSim_move.cpp"
+    }
+  ],
+  "File": [
+    {
+      "isDirectory": false,
+      "path": "Algorithm/moveTo/moveTo.cic"
+    },
+    {
+      "isDirectory": true,
+      "path": "Resource/EPuckSim/Extra/move"
+    }
+  ]
+},
+{
+  "TaskId": "EPuckSim_putOutFire_0",
+  "CICFile": "putOutFire.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 100,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "",
+  "LinkFlags": "",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "channel",
+      "name": "room",
+      "direction": "IN",
+      "sampleSize": 4,
+      "index": 0
+    },
+    {
+      "type": "channel",
+      "name": "result",
+      "direction": "OUT",
+      "sampleSize": 4,
+      "index": 0
+    },
+    {
+      "type": "resource",
+      "name": "detectFire",
+      "direction": "IN"
+    },
+    {
+      "type": "resource",
+      "name": "extinguish",
+      "direction": "OUT"
+    },
+    {
+      "type": "resource",
+      "name": "led",
+      "direction": "OUT"
+    },
+    {
+      "type": "resource",
+      "name": "position",
+      "direction": "IN"
+    },
+    {
+      "type": "resource",
+      "name": "orientation",
+      "direction": "IN"
+    },
+    {
+      "type": "resource",
+      "name": "proximity",
+      "direction": "IN"
+    },
+    {
+      "type": "resource",
+      "name": "wheel",
+      "direction": "OUT"
+    },
+    {
+      "type": "library",
+      "name": "result",
+      "index": 0
+    },
+    {
+      "type": "library",
+      "name": "map",
+      "index": 1
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [
+    {
+      "type": "Extra Header",
+      "name": "EPuckSim_move.h"
+    },
+    {
+      "type": "Extra Source",
+      "name": "EPuckSim_move.cpp"
+    }
+  ],
+  "File": [
+    {
+      "isDirectory": false,
+      "path": "Algorithm/putOutFire/putOutFire.cic"
+    },
+    {
+      "isDirectory": true,
+      "path": "Resource/EPuckSim/Extra/move"
+    }
+  ]
+},
+{
+  "TaskId": "EPuckSim_searchItemRandom",
+  "CICFile": "searchItemRandom.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 100,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "",
+  "LinkFlags": "",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "channel",
+      "name": "room",
+      "direction": "IN",
+      "sampleSize": 4,
+      "index": 0
+    },
+    {
+      "type": "channel",
+      "name": "result",
+      "direction": "OUT",
+      "sampleSize": 4,
+      "index": 0
+    },
+    {
+      "type": "resource",
+      "name": "detectItem",
+      "direction": "IN"
+    },
+    {
+      "type": "resource",
+      "name": "led",
+      "direction": "OUT"
+    },
+    {
+      "type": "resource",
+      "name": "sendSignal",
+      "direction": "OUT"
+    },
+    {
+      "type": "resource",
+      "name": "position",
+      "direction": "IN"
+    },
+    {
+      "type": "resource",
+      "name": "orientation",
+      "direction": "IN"
+    },
+    {
+      "type": "resource",
+      "name": "proximity",
+      "direction": "IN"
+    },
+    {
+      "type": "resource",
+      "name": "wheel",
+      "direction": "OUT"
+    },
+    {
+      "type": "library",
+      "name": "count",
+      "index": 0
+    },
+    {
+      "type": "library",
+      "name": "map",
+      "index": 1
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [
+    {
+      "type": "Extra Header",
+      "name": "EPuckSim_move.h"
+    },
+    {
+      "type": "Extra Source",
+      "name": "EPuckSim_move.cpp"
+    }
+  ],
+  "File": [
+    {
+      "isDirectory": false,
+      "path": "Algorithm/searchItem/searchItemRandom.cic"
+    },
+    {
+      "isDirectory": true,
+      "path": "Resource/EPuckSim/Extra/move"
+    }
+  ]
+},
+{
+  "TaskId": "detectFire_0",
+  "CICFile": "detectFire.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 100,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "",
+  "LinkFlags": "",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "channel",
+      "name": "result",
+      "direction": "OUT",
+      "sampleSize": 4,
+      "index": 0
+    },
+    {
+      "type": "resource",
+      "name": "alarmFire",
+      "direction": "IN"
+    },
+    {
+      "type": "library",
+      "name": "fire",
+      "index": 0
+    },
+    {
+      "type": "group"
+    },
+    {
+      "type": "leader"
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [],
+  "File": [
+    {
+      "isDirectory": false,
+      "path": "Algorithm/detectFire/detectFire.cic"
+    }
+  ]
+},
+{
+  "TaskId": "EPuckSim_alarmFire",
+  "CICFile": "EPuckSim_alarmFire.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "-I/usr/local/include",
+  "LinkFlags": "-L/usr/local/lib -l${ZMQ_LIBNAME} -lRemoteAPIClient -lzmq",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "resource",
+      "name": "alarmFire",
+      "direction": "OUT"
+    },
+    {
+      "type": "simulation"
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [
+    {
+      "type": "Extra Header",
+      "name": "semo_coppeliasim_client.h"
+    },
+    {
+      "type": "Extra Source",
+      "name": "semo_coppeliasim_client.cpp"
+    }
+  ],
+  "File": [
+    {
+      "isDirectory": true,
+      "path": "Simulation/CoppeliaSim"
+    },
+    {
+      "isDirectory": false,
+      "path": "Resource/EPuckSim/Sensor/alarmFire/EPuckSim_alarmFire.cic"
+    }
+  ]
+},
+{
+  "TaskId": "EPuckSim_detectFire",
+  "CICFile": "EPuckSim_detectFire.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 200,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "-I/usr/local/include",
+  "LinkFlags": "-L/usr/local/lib -l${ZMQ_LIBNAME} -lRemoteAPIClient -lzmq",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "resource",
+      "name": "detectFire",
+      "direction": "OUT"
+    },
+    {
+      "type": "simulation"
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [
+    {
+      "type": "Extra Header",
+      "name": "semo_coppeliasim_client.h"
+    },
+    {
+      "type": "Extra Source",
+      "name": "semo_coppeliasim_client.cpp"
+    }
+  ],
+  "File": [
+    {
+      "isDirectory": true,
+      "path": "Simulation/CoppeliaSim"
+    },
+    {
+      "isDirectory": false,
+      "path": "Resource/EPuckSim/Sensor/detectFire/EPuckSim_detectFire.cic"
+    }
+  ]
+},
+{
+  "TaskId": "EPuckSim_detectItem",
+  "CICFile": "EPuckSim_detectItem.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 300,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "-I/usr/local/include",
+  "LinkFlags": "-L/usr/local/lib -l${ZMQ_LIBNAME} -lRemoteAPIClient -lzmq",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "resource",
+      "name": "detectItem",
+      "direction": "OUT"
+    },
+    {
+      "type": "simulation"
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [
+    {
+      "type": "Extra Header",
+      "name": "semo_coppeliasim_client.h"
+    },
+    {
+      "type": "Extra Source",
+      "name": "semo_coppeliasim_client.cpp"
+    }
+  ],
+  "File": [
+    {
+      "isDirectory": true,
+      "path": "Simulation/CoppeliaSim"
+    },
+    {
+      "isDirectory": false,
+      "path": "Resource/EPuckSim/Sensor/detectItem/EPuckSim_detectItem.cic"
+    }
+  ]
+},
+{
+  "TaskId": "EPuckSim_extinguish",
+  "CICFile": "EPuckSim_extinguish.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 300,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "-I/usr/local/include",
+  "LinkFlags": "-L/usr/local/lib -l${ZMQ_LIBNAME} -lRemoteAPIClient -lzmq",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "resource",
+      "name": "extinguish",
+      "direction": "IN"
+    },
+    {
+      "type": "simulation"
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [
+    {
+      "type": "Extra Header",
+      "name": "semo_coppeliasim_client.h"
+    },
+    {
+      "type": "Extra Source",
+      "name": "semo_coppeliasim_client.cpp"
+    }
+  ],
+  "File": [
+    {
+      "isDirectory": true,
+      "path": "Simulation/CoppeliaSim"
+    },
+    {
+      "isDirectory": false,
+      "path": "Resource/EPuckSim/Actuator/extinguish/EPuckSim_extinguish.cic"
+    }
+  ]
+},
+{
+  "TaskId": "EPuckSim_led",
+  "CICFile": "EPuckSim_led.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 300,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "-I/usr/local/include",
+  "LinkFlags": "-L/usr/local/lib -l${ZMQ_LIBNAME} -lRemoteAPIClient -lzmq",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "resource",
+      "name": "led",
+      "direction": "IN"
+    },
+    {
+      "type": "simulation"
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [
+    {
+      "type": "Extra Header",
+      "name": "semo_coppeliasim_client.h"
+    },
+    {
+      "type": "Extra Source",
+      "name": "semo_coppeliasim_client.cpp"
+    }
+  ],
+  "File": [
+    {
+      "isDirectory": true,
+      "path": "Simulation/CoppeliaSim"
+    },
+    {
+      "isDirectory": false,
+      "path": "Resource/EPuckSim/Actuator/led/EPuckSim_led.cic"
+    }
+  ]
+},
+{
+  "TaskId": "EPuckSim_orientation",
+  "CICFile": "EPuckSim_orientation.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 100,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "-I/usr/local/include",
+  "LinkFlags": "-L/usr/local/lib -l${ZMQ_LIBNAME} -lRemoteAPIClient -lzmq",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "resource",
+      "name": "orientation",
+      "direction": "OUT"
+    },
+    {
+      "type": "simulation"
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [
+    {
+      "type": "Extra Header",
+      "name": "semo_coppeliasim_client.h"
+    },
+    {
+      "type": "Extra Source",
+      "name": "semo_coppeliasim_client.cpp"
+    }
+  ],
+  "File": [
+    {
+      "isDirectory": true,
+      "path": "Simulation/CoppeliaSim"
+    },
+    {
+      "isDirectory": false,
+      "path": "Resource/EPuckSim/Sensor/orientation/EPuckSim_orientation.cic"
+    }
+  ]
+},
+{
+  "TaskId": "EPuckSim_position",
+  "CICFile": "EPuckSim_position.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 100,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "-I/usr/local/include",
+  "LinkFlags": "-L/usr/local/lib -l${ZMQ_LIBNAME} -lRemoteAPIClient -lzmq",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "resource",
+      "name": "position",
+      "direction": "OUT"
+    },
+    {
+      "type": "simulation"
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [
+    {
+      "type": "Extra Header",
+      "name": "semo_coppeliasim_client.h"
+    },
+    {
+      "type": "Extra Source",
+      "name": "semo_coppeliasim_client.cpp"
+    }
+  ],
+  "File": [
+    {
+      "isDirectory": true,
+      "path": "Simulation/CoppeliaSim"
+    },
+    {
+      "isDirectory": false,
+      "path": "Resource/EPuckSim/Sensor/position/EPuckSim_position.cic"
+    }
+  ]
+},
+{
+  "TaskId": "EPuckSim_proximity",
+  "CICFile": "EPuckSim_proximity.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 100,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "-I/usr/local/include",
+  "LinkFlags": "-L/usr/local/lib -l${ZMQ_LIBNAME} -lRemoteAPIClient -lzmq",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "resource",
+      "name": "proximity",
+      "direction": "OUT"
+    },
+    {
+      "type": "simulation"
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [
+    {
+      "type": "Extra Header",
+      "name": "semo_coppeliasim_client.h"
+    },
+    {
+      "type": "Extra Source",
+      "name": "semo_coppeliasim_client.cpp"
+    }
+  ],
+  "File": [
+    {
+      "isDirectory": true,
+      "path": "Simulation/CoppeliaSim"
+    },
+    {
+      "isDirectory": false,
+      "path": "Resource/EPuckSim/Sensor/proximity/EPuckSim_proximity.cic"
+    }
+  ]
+},
+{
+  "TaskId": "EPuckSim_sendSignal",
+  "CICFile": "EPuckSim_sendSignal.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 300,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "-I/usr/local/include",
+  "LinkFlags": "-L/usr/local/lib -l${ZMQ_LIBNAME} -lRemoteAPIClient -lzmq",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "resource",
+      "name": "sendSignal",
+      "direction": "IN"
+    },
+    {
+      "type": "simulation"
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [
+    {
+      "type": "Extra Header",
+      "name": "semo_coppeliasim_client.h"
+    },
+    {
+      "type": "Extra Source",
+      "name": "semo_coppeliasim_client.cpp"
+    }
+  ],
+  "File": [
+    {
+      "isDirectory": true,
+      "path": "Simulation/CoppeliaSim"
+    },
+    {
+      "isDirectory": false,
+      "path": "Resource/EPuckSim/Actuator/sendSignal/EPuckSim_sendSignal.cic"
+    }
+  ]
+},
+{
+  "TaskId": "EPuckSim_wheel",
+  "CICFile": "EPuckSim_wheel.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 100,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "-I/usr/local/include",
+  "LinkFlags": "-L/usr/local/lib -l${ZMQ_LIBNAME} -lRemoteAPIClient -lzmq",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "resource",
+      "name": "wheel",
+      "direction": "IN"
+    },
+    {
+      "type": "simulation"
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [
+    {
+      "type": "Extra Header",
+      "name": "semo_coppeliasim_client.h"
+    },
+    {
+      "type": "Extra Source",
+      "name": "semo_coppeliasim_client.cpp"
+    }
+  ],
+  "File": [
+    {
+      "isDirectory": true,
+      "path": "Simulation/CoppeliaSim"
+    },
+    {
+      "isDirectory": false,
+      "path": "Resource/EPuckSim/Actuator/wheel/EPuckSim_wheel.cic"
+    }
+  ]
+},
+{
+  "TaskId": "makeEvacuationPath_0",
+  "CICFile": "makeEvacuationPath.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 100,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "",
+  "LinkFlags": "",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "resource",
+      "name": "position",
+      "direction": "IN"
+    },
+    {
+      "type": "resource",
+      "name": "orientation",
+      "direction": "IN"
+    },
+    {
+      "type": "resource",
+      "name": "ultrasonic",
+      "direction": "IN"
+    },
+    {
+      "type": "resource",
+      "name": "wheel",
+      "direction": "OUT"
+    },
+    {
+      "type": "library",
+      "name": "state",
+      "index": 0
+    },
+    {
+      "type": "group"
+    },
+    {
+      "type": "leader"
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [],
+  "File": [
+    {
+      "isDirectory": false,
+      "path": "Algorithm/makeEvacuationPath/makeEvacuationPath.cic"
+    }
+  ]
+},
+{
+  "TaskId": "P3DXSim_alarmFire",
+  "CICFile": "P3DXSim_alarmFire.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "-I/usr/local/include",
+  "LinkFlags": "-L/usr/local/lib -l${ZMQ_LIBNAME} -lRemoteAPIClient -lzmq",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "resource",
+      "name": "alarmFire",
+      "direction": "OUT"
+    },
+    {
+      "type": "simulation"
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [
+    {
+      "type": "Extra Header",
+      "name": "semo_coppeliasim_client.h"
+    },
+    {
+      "type": "Extra Source",
+      "name": "semo_coppeliasim_client.cpp"
+    }
+  ],
+  "File": [
+    {
+      "isDirectory": true,
+      "path": "Simulation/CoppeliaSim"
+    },
+    {
+      "isDirectory": false,
+      "path": "Resource/P3DXSim/Sensor/alarmFire/P3DXSim_alarmFire.cic"
+    }
+  ]
+},
+{
+  "TaskId": "P3DXSim_orientation",
+  "CICFile": "P3DXSim_orientation.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 200,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "-I/usr/local/include",
+  "LinkFlags": "-L/usr/local/lib -l${ZMQ_LIBNAME} -lRemoteAPIClient -lzmq",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "resource",
+      "name": "orientation",
+      "direction": "OUT"
+    },
+    {
+      "type": "simulation"
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [
+    {
+      "type": "Extra Header",
+      "name": "semo_coppeliasim_client.h"
+    },
+    {
+      "type": "Extra Source",
+      "name": "semo_coppeliasim_client.cpp"
+    }
+  ],
+  "File": [
+    {
+      "isDirectory": true,
+      "path": "Simulation/CoppeliaSim"
+    },
+    {
+      "isDirectory": false,
+      "path": "Resource/P3DXSim/Sensor/orientation/P3DXSim_orientation.cic"
+    }
+  ]
+},
+{
+  "TaskId": "P3DXSim_position",
+  "CICFile": "P3DXSim_position.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 200,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "-I/usr/local/include",
+  "LinkFlags": "-L/usr/local/lib -l${ZMQ_LIBNAME} -lRemoteAPIClient -lzmq",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "resource",
+      "name": "position",
+      "direction": "OUT"
+    },
+    {
+      "type": "simulation"
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [
+    {
+      "type": "Extra Header",
+      "name": "semo_coppeliasim_client.h"
+    },
+    {
+      "type": "Extra Source",
+      "name": "semo_coppeliasim_client.cpp"
+    }
+  ],
+  "File": [
+    {
+      "isDirectory": true,
+      "path": "Simulation/CoppeliaSim"
+    },
+    {
+      "isDirectory": false,
+      "path": "Resource/P3DXSim/Sensor/position/P3DXSim_position.cic"
+    }
+  ]
+},
+{
+  "TaskId": "P3DXSim_ultrasonic",
+  "CICFile": "P3DXSim_ultrasonic.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 200,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "-I/usr/local/include",
+  "LinkFlags": "-L/usr/local/lib -l${ZMQ_LIBNAME} -lRemoteAPIClient -lzmq",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "resource",
+      "name": "ultrasonic",
+      "direction": "OUT"
+    },
+    {
+      "type": "simulation"
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [
+    {
+      "type": "Extra Header",
+      "name": "semo_coppeliasim_client.h"
+    },
+    {
+      "type": "Extra Source",
+      "name": "semo_coppeliasim_client.cpp"
+    }
+  ],
+  "File": [
+    {
+      "isDirectory": true,
+      "path": "Simulation/CoppeliaSim"
+    },
+    {
+      "isDirectory": false,
+      "path": "Resource/P3DXSim/Sensor/ultrasonic/P3DXSim_ultrasonic.cic"
+    }
+  ]
+},
+{
+  "TaskId": "P3DXSim_wheel",
+  "CICFile": "P3DXSim_wheel.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 200,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "-I/usr/local/include",
+  "LinkFlags": "-L/usr/local/lib -l${ZMQ_LIBNAME} -lRemoteAPIClient -lzmq",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "resource",
+      "name": "wheel",
+      "direction": "IN"
+    },
+    {
+      "type": "simulation"
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [
+    {
+      "type": "Extra Header",
+      "name": "semo_coppeliasim_client.h"
+    },
+    {
+      "type": "Extra Source",
+      "name": "semo_coppeliasim_client.cpp"
+    }
+  ],
+  "File": [
+    {
+      "isDirectory": true,
+      "path": "Simulation/CoppeliaSim"
+    },
+    {
+      "isDirectory": false,
+      "path": "Resource/P3DXSim/Actuator/wheel/P3DXSim_wheel.cic"
+    }
+  ]
+},
+{
+  "TaskId": "leaderElectionIdBased",
+  "CICFile": "leaderElectionIdBased.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 100,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "",
+  "LinkFlags": "",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "group"
+    },
+    {
+      "type": "leader"
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [],
+  "File": [
+    {
+      "isDirectory": false,
+      "path": "Consensus/LeaderElection/IDBased/leaderElectionIdBased.cic"
+    }
+  ]
+},
+{
+  "TaskId": "grouping_algorithm_sta",
+  "CICFile": "STA.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 100,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "",
+  "LinkFlags": "",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "channel",
+      "name": "mode",
+      "sampleSize": 4,
+      "direction": "IN",
+      "index": 0
+    },
+    {
+      "type": "channel",
+      "name": "result",
+      "sampleSize": 4,
+      "direction": "OUT",
+      "index": 0
+    },
+    {
+      "type": "library",
+      "name": "group",
+      "index": 0
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [],
+  "File": [
+    {
+      "isDirectory": false,
+      "path": "Consensus/GroupSelection/STA/STA.cic"
+    }
+  ]
+},
+{
+  "TaskId": "grouping_algorithm_dta",
+  "CICFile": "DTA.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 100,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "",
+  "LinkFlags": "",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "channel",
+      "name": "mode",
+      "sampleSize": 4,
+      "direction": "IN",
+      "index": 0
+    },
+    {
+      "type": "channel",
+      "name": "result",
+      "sampleSize": 4,
+      "direction": "OUT",
+      "index": 0
+    },
+    {
+      "type": "library",
+      "name": "group",
+      "index": 0
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [],
+  "File": [
+    {
+      "isDirectory": false,
+      "path": "Consensus/GroupSelection/DTA/DTA.cic"
+    }
+  ]
+},
+{
+  "TaskId": "searchMineral_0",
+  "CICFile": "searchMineral.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 100,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "",
+  "LinkFlags": "",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "channel",
+      "name": "found",
+      "direction": "OUT",
+      "sampleSize": 4,
+      "index": 0
+    },
+    {
+      "type": "channel",
+      "name": "result",
+      "direction": "OUT",
+      "sampleSize": 4,
+      "index": 1
+    },
+    {
+      "type": "resource",
+      "name": "obstacleDetector",
+      "direction": "IN"
+    },
+    {
+      "type": "resource",
+      "name": "mineralDetector",
+      "direction": "IN"
+    },
+    {
+      "type": "resource",
+      "name": "direction",
+      "direction": "OUT"
+    },
+    {
+      "type": "library",
+      "name": "count",
+      "index": 0
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [
+    {
+      "type": "Extra Header",
+      "name": "semo_direction.h"
+    },
+    {
+      "type": "Extra Header",
+      "name": "semo_obstacle.h"
+    }
+  ],
+  "File": [
+    {
+      "isDirectory": false,
+      "path": "Algorithm/include/obstacle/semo_obstacle.h"
+    },
+    {
+      "isDirectory": false,
+      "path": "Algorithm/include/direction/semo_direction.h"
+    },
+    {
+      "isDirectory": false,
+      "path": "Algorithm/searchMineral/searchMineral.cic"
+    }
+  ]
+},
+{
+  "TaskId": "backToBase_0",
+  "CICFile": "backToBase.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 100,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "",
+  "LinkFlags": "",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "channel",
+      "name": "found",
+      "direction": "OUT",
+      "sampleSize": 4,
+      "index": 0
+    },
+    {
+      "type": "resource",
+      "name": "obstacleDetector",
+      "direction": "IN"
+    },
+    {
+      "type": "resource",
+      "name": "baseDetector",
+      "direction": "IN"
+    },
+    {
+      "type": "resource",
+      "name": "direction",
+      "direction": "OUT"
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [
+    {
+      "type": "Extra Header",
+      "name": "semo_direction.h"
+    },
+    {
+      "type": "Extra Header",
+      "name": "semo_obstacle.h"
+    }
+  ],
+  "File": [
+    {
+      "isDirectory": false,
+      "path": "Algorithm/include/obstacle/semo_obstacle.h"
+    },
+    {
+      "isDirectory": false,
+      "path": "Algorithm/include/direction/semo_direction.h"
+    },
+    {
+      "isDirectory": false,
+      "path": "Algorithm/backToBase/backToBase.cic"
+    }
+  ]
+},
+{
+  "TaskId": "EPuckSim_obstacleDetector",
+  "CICFile": "EPuckSim_obstacleDetector.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 200,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "",
+  "LinkFlags": "",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "resource",
+      "name": "proximity",
+      "direction": "IN"
+    },
+    {
+      "type": "resource",
+      "name": "obstacleDetector",
+      "direction": "OUT"
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [
+    {
+      "type": "Extra Header",
+      "name": "semo_obstacle.h"
+    },
+    {
+      "type": "Extra Header",
+      "name": "semo_distance.h"
+    }
+  ],
+  "File": [
+    {
+      "isDirectory": false,
+      "path": "Algorithm/include/distance/semo_distance.h"
+    },
+    {
+      "isDirectory": false,
+      "path": "Algorithm/include/obstacle/semo_obstacle.h"
+    },
+    {
+      "isDirectory": false,
+      "path": "Resource/EPuckSim/Proxy/obstacleDetector/EPuckSim_obstacleDetector.cic"
+    }
+  ]
+},
+{
+  "TaskId": "EPuckSim_mineralDetector",
+  "CICFile": "EPuckSim_mineralDetector.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 200,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "",
+  "LinkFlags": "",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "resource",
+      "name": "getSignal",
+      "direction": "IN"
+    },
+    {
+      "type": "resource",
+      "name": "mineralDetector",
+      "direction": "OUT"
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [],
+  "File": [
+    {
+      "isDirectory": false,
+      "path": "Resource/EPuckSim/Proxy/mineralDetector/EPuckSim_mineralDetector.cic"
+    }
+  ]
+},
+{
+  "TaskId": "EPuckSim_getSignal",
+  "CICFile": "EPuckSim_getSignal.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 200,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "-I/usr/local/include",
+  "LinkFlags": "-L/usr/local/lib -l${ZMQ_LIBNAME} -lRemoteAPIClient -lzmq",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "resource",
+      "name": "getSignal",
+      "direction": "OUT"
+    },
+    {
+      "type": "simulation"
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [
+    {
+      "type": "Extra Header",
+      "name": "semo_coppeliasim_client.h"
+    },
+    {
+      "type": "Extra Source",
+      "name": "semo_coppeliasim_client.cpp"
+    }
+  ],
+  "File": [
+    {
+      "isDirectory": true,
+      "path": "Simulation/CoppeliaSim"
+    },
+    {
+      "isDirectory": false,
+      "path": "Resource/EPuckSim/Sensor/getSignal/EPuckSim_getSignal.cic"
+    }
+  ]
+},
+{
+  "TaskId": "EPuckSim_baseDetector",
+  "CICFile": "EPuckSim_baseDetector.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 200,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "",
+  "LinkFlags": "",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "resource",
+      "name": "getSignal",
+      "direction": "IN"
+    },
+    {
+      "type": "resource",
+      "name": "baseDetector",
+      "direction": "OUT"
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [],
+  "File": [
+    {
+      "isDirectory": false,
+      "path": "Resource/EPuckSim/Proxy/baseDetector/EPuckSim_baseDetector.cic"
+    }
+  ]
+},
+{
+  "TaskId": "EPuckSim_direction",
+  "CICFile": "EPuckSim_direction.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 200,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "",
+  "LinkFlags": "",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "resource",
+      "name": "direction",
+      "direction": "IN"
+    },
+    {
+      "type": "resource",
+      "name": "wheel",
+      "direction": "OUT"
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [
+    {
+      "type": "Extra Header",
+      "name": "semo_direction.h"
+    }
+  ],
+  "File": [
+    {
+      "isDirectory": false,
+      "path": "Algorithm/include/direction/semo_direction.h"
+    },
+    {
+      "isDirectory": false,
+      "path": "Resource/EPuckSim/Proxy/direction/EPuckSim_direction.cic"
+    }
+  ]
+},
+{
+  "TaskId": "EPuckSim_searchItemRandomWithoutMap",
+  "CICFile": "searchItemRandomWithoutMap.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 100,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "",
+  "LinkFlags": "",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "channel",
+      "name": "room",
+      "direction": "IN",
+      "sampleSize": 4,
+      "index": 0
+    },
+    {
+      "type": "channel",
+      "name": "result",
+      "direction": "OUT",
+      "sampleSize": 4,
+      "index": 0
+    },
+    {
+      "type": "resource",
+      "name": "detectItem",
+      "direction": "IN"
+    },
+    {
+      "type": "resource",
+      "name": "led",
+      "direction": "OUT"
+    },
+    {
+      "type": "resource",
+      "name": "sendSignal",
+      "direction": "OUT"
+    },
+    {
+      "type": "resource",
+      "name": "position",
+      "direction": "IN"
+    },
+    {
+      "type": "resource",
+      "name": "orientation",
+      "direction": "IN"
+    },
+    {
+      "type": "resource",
+      "name": "proximity",
+      "direction": "IN"
+    },
+    {
+      "type": "resource",
+      "name": "wheel",
+      "direction": "OUT"
+    },
+    {
+      "type": "library",
+      "name": "count",
+      "index": 0
+    },
+    {
+      "type": "library",
+      "name": "map",
+      "index": 1
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [
+    {
+      "type": "Extra Header",
+      "name": "EPuckSim_move.h"
+    },
+    {
+      "type": "Extra Source",
+      "name": "EPuckSim_move.cpp"
+    }
+  ],
+  "File": [
+    {
+      "isDirectory": false,
+      "path": "Algorithm/searchItem/searchItemRandomWithoutMap.cic"
+    },
+    {
+      "isDirectory": true,
+      "path": "Resource/EPuckSim/Extra/move"
+    }
+  ]
+},
+{
+  "TaskId": "EPuckSim_searchItemNearby",
+  "CICFile": "searchItemNearby.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 100,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "",
+  "LinkFlags": "",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "channel",
+      "name": "room",
+      "direction": "IN",
+      "sampleSize": 4,
+      "index": 0
+    },
+    {
+      "type": "channel",
+      "name": "result",
+      "direction": "OUT",
+      "sampleSize": 4,
+      "index": 0
+    },
+    {
+      "type": "resource",
+      "name": "detectItem",
+      "direction": "IN"
+    },
+    {
+      "type": "resource",
+      "name": "led",
+      "direction": "OUT"
+    },
+    {
+      "type": "resource",
+      "name": "sendSignal",
+      "direction": "OUT"
+    },
+    {
+      "type": "resource",
+      "name": "position",
+      "direction": "IN"
+    },
+    {
+      "type": "resource",
+      "name": "orientation",
+      "direction": "IN"
+    },
+    {
+      "type": "resource",
+      "name": "proximity",
+      "direction": "IN"
+    },
+    {
+      "type": "resource",
+      "name": "wheel",
+      "direction": "OUT"
+    },
+    {
+      "type": "library",
+      "name": "count",
+      "index": 0
+    },
+    {
+      "type": "library",
+      "name": "map",
+      "index": 1
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [
+    {
+      "type": "Extra Header",
+      "name": "EPuckSim_move.h"
+    },
+    {
+      "type": "Extra Source",
+      "name": "EPuckSim_move.cpp"
+    }
+  ],
+  "File": [
+    {
+      "isDirectory": false,
+      "path": "Algorithm/searchItem/searchItemNearby.cic"
+    },
+    {
+      "isDirectory": true,
+      "path": "Resource/EPuckSim/Extra/move"
+    }
+  ]
+},
+{
+  "TaskId": "Turtlebot3_burger_obstacleDetector",
+  "CICFile": "Turtlebot3_obstacleDetector.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 100,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "",
+  "LinkFlags": "",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "resource",
+      "name": "lds",
+      "direction": "IN"
+    },
+    {
+      "type": "resource",
+      "name": "obstacleDetector",
+      "direction": "OUT"
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [
+    {
+      "type": "Extra Header",
+      "name": "semo_obstacle.h"
+    },
+    {
+      "type": "Extra Header",
+      "name": "semo_distance.h"
+    }
+  ],
+  "File": [
+    {
+      "isDirectory": false,
+      "path": "Algorithm/include/distance/semo_distance.h"
+    },
+    {
+      "isDirectory": false,
+      "path": "Algorithm/include/obstacle/semo_obstacle.h"
+    },
+    {
+      "isDirectory": false,
+      "path": "Resource/TurtleBot_Common/Proxy/obstacleDetector/Turtlebot3_obstacleDetector.cic"
+    }
+  ]
+},
+{
+  "TaskId": "Turtlebot3_burger_mineralDetector",
+  "CICFile": "Turtlebot3_mineralDetector.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 100,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "",
+  "LinkFlags": "",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "resource",
+      "name": "color",
+      "direction": "IN"
+    },
+    {
+      "type": "resource",
+      "name": "mineralDetector",
+      "direction": "OUT"
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [],
+  "File": [
+    {
+      "isDirectory": false,
+      "path": "Resource/TurtleBot_Common/Proxy/mineralDetector/Turtlebot3_mineralDetector.cic"
+    }
+  ]
+},
+{
+  "TaskId": "Turtlebot3_burger_baseDetector",
+  "CICFile": "Turtlebot3_baseDetector.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 100,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "",
+  "LinkFlags": "",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "resource",
+      "name": "color",
+      "direction": "IN"
+    },
+    {
+      "type": "resource",
+      "name": "baseDetector",
+      "direction": "OUT"
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [],
+  "File": [
+    {
+      "isDirectory": false,
+      "path": "Resource/TurtleBot_Common/Proxy/baseDetector/Turtlebot3_baseDetector.cic"
+    }
+  ]
+},
+{
+  "TaskId": "Turtlebot3_burger_direction",
+  "CICFile": "Turtlebot3_burger_direction.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 100,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "",
+  "LinkFlags": "",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "resource",
+      "name": "direction",
+      "direction": "IN"
+    },
+    {
+      "type": "resource",
+      "name": "wheel",
+      "direction": "OUT"
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [
+    {
+      "type": "Extra Header",
+      "name": "semo_direction.h"
+    }
+  ],
+  "File": [
+    {
+      "isDirectory": false,
+      "path": "Algorithm/include/direction/semo_direction.h"
+    },
+    {
+      "isDirectory": false,
+      "path": "Resource/TurtleBotBurger/Proxy/direction/Turtlebot3_burger_direction.cic"
+    }
+  ]
+},
+{
+  "TaskId": "Turtlebot3_lds",
+  "CICFile": "Turtlebot3_lds.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 200,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "",
+  "LinkFlags": "-ludev",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "resource",
+      "name": "lds",
+      "direction": "OUT"
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [
+    {
+      "type": "Extra Header",
+      "name": "semo_distance.h"
+    },
+    {
+      "type": "Extra Header",
+      "name": "Turtlebot3_lds.h"
+    },
+    {
+      "type": "Extra Source",
+      "name": "cmd_interface_linux.cpp"
+    },
+    {
+      "type": "Extra Source",
+      "name": "lipkg.cpp"
+    },
+    {
+      "type": "Extra Source",
+      "name": "slbf.cpp"
+    },
+    {
+      "type": "Extra Source",
+      "name": "transform.cpp"
+    }
+  ],
+  "File": [
+    {
+      "isDirectory": false,
+      "path": "Algorithm/include/distance/semo_distance.h"
+    },
+    {
+      "isDirectory": true,
+      "path": "Resource/TurtleBot_Common/Sensor/lds/"
+    }
+  ]
+},
+{
+  "TaskId": "Turtlebot3_color",
+  "CICFile": "Resource/TurtleBot_Common/Sensor/color/task.xml",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 100,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "",
+  "LinkFlags": "",
+  "HasSubGraph": true,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "resource",
+      "name": "color",
+      "direction": "OUT"
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [
+    {
+      "type": "Extra Header",
+      "name": "semo_color.h"
+    }
+  ],
+  "File": [
+    {
+      "isDirectory": false,
+      "path": "Algorithm/include/color/semo_color.h"
+    },
+    {
+      "isDirectory": true,
+      "path": "Resource/TurtleBot_Common/Sensor/color/"
+    }
+  ]
+},
+{
+  "TaskId": "Turtlebot3_wheel",
+  "CICFile": "Resource/TurtleBot_Common/Actuator/wheel/task.xml",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 100,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "",
+  "LinkFlags": "",
+  "HasSubGraph": true,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "resource",
+      "name": "wheel",
+      "direction": "IN"
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [],
+  "File": [
+    {
+      "isDirectory": true,
+      "path": "Resource/TurtleBot_Common/Actuator/wheel/"
+    }
+  ]
+},
+{
+  "TaskId": "Turtlebot3_ledControl",
+  "CICFile": "Turtlebot3_ledControl.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 200,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "",
+  "LinkFlags": "",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "resource",
+      "name": "ledControl",
+      "direction": "IN"
+    },
+    {
+      "type": "resource",
+      "name": "led",
+      "direction": "OUT"
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [
+    {
+      "type": "Extra Header",
+      "name": "semo_led.h"
+    }
+  ],
+  "File": [
+    {
+      "isDirectory": false,
+      "path": "Algorithm/include/led/semo_led.h"
+    },
+    {
+      "isDirectory": false,
+      "path": "Resource/TurtleBot_Common/Proxy/ledControl/Turtlebot3_ledControl.cic"
+    }
+  ]
+},
+{
+  "TaskId": "EPuckSim_ledControl",
+  "CICFile": "EPuckSim_ledControl.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 300,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "-I/usr/local/include",
+  "LinkFlags": "",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "resource",
+      "name": "ledControl",
+      "direction": "IN"
+    },
+    {
+      "type": "resource",
+      "name": "led",
+      "direction": "OUT"
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [],
+  "File": [
+    {
+      "isDirectory": false,
+      "path": "Resource/EPuckSim/Proxy/ledControl/EPuckSim_ledControl.cic"
+    }
+  ]
+},
+{
+  "TaskId": "collectMineral_0",
+  "CICFile": "collectMineral.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 100,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "",
+  "LinkFlags": "",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "channel",
+      "name": "result",
+      "direction": "OUT",
+      "sampleSize": 4,
+      "index": 0
+    },
+    {
+      "type": "resource",
+      "name": "ledControl",
+      "direction": "OUT"
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [],
+  "File": [
+    {
+      "isDirectory": false,
+      "path": "Algorithm/collectMineral/collectMineral.cic"
+    }
+  ]
+},
+{
+  "TaskId": "putMineral_0",
+  "CICFile": "putMineral.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 100,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "",
+  "LinkFlags": "",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "channel",
+      "name": "result",
+      "direction": "OUT",
+      "sampleSize": 4,
+      "index": 0
+    },
+    {
+      "type": "resource",
+      "name": "ledControl",
+      "direction": "OUT"
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [],
+  "File": [
+    {
+      "isDirectory": false,
+      "path": "Algorithm/putMineral/putMineral.cic"
+    }
+  ]
+},
+{
+  "TaskId": "Turtlebot3_led",
+  "CICFile": "Resource/TurtleBot_Common/Actuator/led/task.xml",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 200,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "",
+  "LinkFlags": "",
+  "HasSubGraph": true,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "resource",
+      "name": "led",
+      "direction": "IN"
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [
+    {
+      "type": "Extra Header",
+      "name": "semo_led.h"
+    }
+  ],
+  "File": [
+    {
+      "isDirectory": false,
+      "path": "Algorithm/include/led/semo_led.h"
+    },
+    {
+      "isDirectory": true,
+      "path": "Resource/TurtleBot_Common/Actuator/led/"
+    }
+  ]
+},
+{
+  "TaskId": "report_0",
+  "CICFile": "report.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "",
+  "LinkFlags": "",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "group"
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [],
+  "File": [
+    {
+      "isDirectory": false,
+      "path": "Algorithm/report/report.cic"
+    }
+  ]
+},
+{
+  "TaskId": "remoteControlLocal",
+  "CICFile": "remoteControlLocal.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "",
+  "LinkFlags": "",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "leader"
+    },
+    {
+      "type": "group"
+    },
+    {
+      "type": "library",
+      "name": "KEY_INPUT",
+      "index": 0
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [
+    {
+      "type": "Extra Header",
+      "name": "semo_direction.h"
+    }
+  ],
+  "File": [
+    {
+      "isDirectory": false,
+      "path": "Algorithm/include/direction/semo_direction.h"
+    },
+    {
+      "isDirectory": false,
+      "path": "Algorithm/remoteControl/remoteControlLocal.cic"
+    }
+  ]
+},
+{
+  "TaskId": "getModeTransferCommandLocal",
+  "CICFile": "getModeTransferCommandLocal.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "",
+  "LinkFlags": "",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "channel",
+      "name": "mode",
+      "direction": "OUT",
+      "sampleSize": 4,
+      "index": 0
+    },
+    {
+      "type": "leader"
+    },
+    {
+      "type": "group"
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [],
+  "File": [
+    {
+      "isDirectory": false,
+      "path": "Algorithm/getModeTransferCommand/getModeTransferCommandLocal.cic"
+    }
+  ]
+},
+{
+  "TaskId": "EPuckSim_walkAround_0",
+  "CICFile": "walkAround.cic",
+  "Deadline": {
+    "time": 500,
+    "unit": "ms"
+  },
+  "Period": {
+    "time": 100,
+    "unit": "ms"
+  },
+  "Priority": 1,
+  "Language": "C++",
+  "CompileFlags": "",
+  "LinkFlags": "",
+  "HasSubGraph": false,
+  "RunCondition": "time-driven",
+  "Description": "",
+  "Communication": [
+    {
+      "type": "channel",
+      "name": "room",
+      "direction": "IN",
+      "sampleSize": 4,
+      "index": 0
+    },
+    {
+      "type": "channel",
+      "name": "result",
+      "direction": "OUT",
+      "sampleSize": 4,
+      "index": 0
+    },
+    {
+      "type": "resource",
+      "name": "position",
+      "direction": "IN"
+    },
+    {
+      "type": "resource",
+      "name": "orientation",
+      "direction": "IN"
+    },
+    {
+      "type": "resource",
+      "name": "proximity",
+      "direction": "IN"
+    },
+    {
+      "type": "resource",
+      "name": "wheel",
+      "direction": "OUT"
+    },
+    {
+      "type": "library",
+      "name": "map",
+      "index": 0
+    }
+  ],
+  "PortMap": [],
+  "ExtraSetting": [
+    {
+      "type": "Extra Header",
+      "name": "EPuckSim_move.h"
+    },
+    {
+      "type": "Extra Source",
+      "name": "EPuckSim_move.cpp"
+    }
+  ],
+  "File": [
+    {
+      "isDirectory": false,
+      "path": "Algorithm/walkAround/walkAround.cic"
+    },
+    {
+      "isDirectory": true,
+      "path": "Resource/EPuckSim/Extra/move"
+    }
+  ]
+}]
